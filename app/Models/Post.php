@@ -19,19 +19,16 @@ class Post
             langsung terlihat pada rekap laporan yang ada pada masing – masing posyandu."
         ],
         [
-            "title" => "Stunting 2",
-            "slug" => "stunting-2",
+            "title" => "Pengertian Stunting",
+            "slug" => "pengertian stunting",
             "author" => "Adhiba Alya",
-            "body" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Eius nisi quas deleniti officiis neque eveniet placeat! 
-            Excepturi dicta voluptate temporibus neque repudiandae minima? 
-            Error illum debitis nemo mollitia odio tempora, 
-            fugit minus harum incidunt impedit in asperiores modi iusto ratione dolorem, 
-            nulla suscipit expedita aliquam rerum magni architecto recusandae dolor! 
-            Quisquam reiciendis consectetur eius, corporis, 
-            nostrum cumque vel optio quasi a enim quos fuga aperiam 
-            totam repellat alias eum ipsa saepe numquam deserunt fugiat? 
-            Quos aspernatur optio aut autem ad!"
+            "body" => " Stunting adalah masalah kurang gizi kronis yang disebabkan oleh kurangnya asupan gizi dalam waktu yang cukup lama, sehingga mengakibatkan gangguan pertumbuhan pada anak yakni tinggi badan anak lebih rendah atau pendek (kerdil) dari standar usianya.
+            Kondisi tubuh anak yang pendek seringkali dikatakan sebagai faktor keturunan (genetik) dari 
+            kedua orang tuanya, sehingga masyarakat banyak yang hanya menerima tanpa berbuat apa-apa untuk 
+            mencegahnya. Padahal seperti kita ketahui, genetika merupakan faktor determinan kesehatan yang 
+            paling kecil pengaruhnya bila dibandingkan dengan faktor perilaku, lingkungan (sosial, ekonomi, 
+            budaya, politik), dan pelayanan kesehatan. Dengan kata lain, stunting merupakan masalah yang 
+            sebenarnya bisa dicegah."
         ]
     ];
 
