@@ -51,6 +51,7 @@ Route::get('/informasi', function () {
     ];
     return view('informasi', [
         "title" => "Informasi",
+        "image1" => "stunting.jpg",
         "posts" => $informasi
     ]);
 });
@@ -63,8 +64,8 @@ Route::get('/about', function () {
         "nama1" => "Pascallis Henoch",
         "nim1" => "152011513025",
         "nama2" => "Adhiba Alya",
-        "nim2" => "152011513004",
-        "image1" => "stunting.jpg"
+        "nim2" => "152011513004"
+        
     ]);
 });
 

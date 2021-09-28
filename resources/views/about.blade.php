@@ -7,6 +7,5 @@
     <p>{{ $nim1 }}</p>
     <h3>{{ $nama2 }}</h3>
     <p>{{ $nim2 }}</p>
-    <img src="img/{{ $image1 }}" alt="{{ $image1 }}">   
 @endsection
     

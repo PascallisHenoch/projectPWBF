@@ -3,6 +3,7 @@
 
 @section('container')
     <h1>Informasi</h1>
+    <img src="img/{{ $image1 }}" alt="{{ $image1 }}">
     @foreach ($posts as $post)
     <article class="mb-5">
         <a href="/posts/{{ $post["slug"] }}"><h2>{{ $post["title"] }}</a>
