@@ -3,7 +3,7 @@
 @section('container')
     <h1>About</h1>
 
-    <article class="my-5">
+    <article class="my-3">
         <img src="img/{{ $paskal1 }}" alt="{{ $paskal1 }}" width="150" class="img-thumbnail rounded-circle">
         <h4>{{ $nama1 }}</h4>
         <p>{{ $nim1 }}</p>
