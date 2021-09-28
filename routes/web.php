@@ -14,5 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('1home');
+});
+
+Route::get('/information', function () {
+    return view('2information');
+});
+
+Route::get('/about', function () {
+    return view('3about', [
+        "nama1" => "Pascallis Henoch",
+        "nim1" => "152011513025",
+        "nama2" => "Adhiba Alya",
+        "nim2" => "152011513004",
+        "image1" => "stunting.jpg"
+    ]);
 });
