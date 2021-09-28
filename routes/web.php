@@ -2,6 +2,7 @@
 
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 
 /*
@@ -23,14 +24,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('/informasi', function () {
-    return view('informasi', [
-        "title" => "Informasi",
-        "image1" => "stunting.jpg",
-        "posts" => Post::all()
-    ]);
-});
-
+Route::get('/informasi', [PostController::class,'index']);
+Route::get('posts/{slug}', [PostController::class, 'show']);
 
 Route::get('/about', function () {
     return view('about', [
@@ -45,10 +40,4 @@ Route::get('/about', function () {
 });
 
 
-//halaman single posts
-Route::get('posts/{slug}', function ($slug) {
-    return view('post', [
-        "title" => "Single Post",
-        "post" => Post::find($slug)
-    ]);
-});
+
