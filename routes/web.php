@@ -63,8 +63,10 @@ Route::get('/about', function () {
         "title" => "About",
         "nama1" => "Pascallis Henoch",
         "nim1" => "152011513025",
+        "paskal1" => "paskal1.jpeg",
         "nama2" => "Adhiba Alya",
-        "nim2" => "152011513004"
+        "nim2" => "152011513004",
+        "dhiba1" => "dhiba1.png",
         
     ]);
 });
