@@ -1,1 +1,1 @@
-alert("Hallo👋🏻, Selamat datang di blog ASIPS!")
+alert("Hallo👋🏻, Selamat datang di project ASIPS!")
