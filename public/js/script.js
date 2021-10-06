@@ -1,1 +1,1 @@
-alert("Welcome!")
+alert("Hallo👋🏻, Selamat datang di blog ASIPS!")

@@ -1,7 +1,7 @@
 @extends('layouts/main')
 
 @section('container')
-    <h1>About</h1>
+    <h1>Kelompok 4 PWBF PRAKTIKUM</h1>
 
     <article class="my-3">
         <img src="img/{{ $paskal1 }}" alt="{{ $paskal1 }}" width="150" class="img-thumbnail rounded-circle">
