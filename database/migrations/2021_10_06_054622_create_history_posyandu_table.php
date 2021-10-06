@@ -13,13 +13,16 @@ class CreateHistoryPosyanduTable extends Migration
      */
     public function up()
     {
-        Schema::create('history_posyandu', function (Blueprint $table) {
-            $table->integer('id_history_posyandu');
-            $table->integer('id_balita');
-            $table->date('tgl_lahir_balita');
+        Schema::create('history_posyandu_table', function (Blueprint $table) {
+            $table->id();
+            $table->date('tgl_posyandu');
             $table->float('berat_badan_balita');
             $table->float('tinggi_badan_balita');
             $table->timestamps();
+        });
+
+        Schema::table('history_posyandu_table', function (Blueprint $table) {
+            $table->foreignId('id_history_posyandu')->constrained('balita_table');
         });
     }
 

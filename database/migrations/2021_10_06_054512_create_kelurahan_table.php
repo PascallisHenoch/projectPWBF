@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUserTable extends Migration
+class CreateKelurahanTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,14 @@ class CreateUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('user', function (Blueprint $table) {
-            $table->integer('id_user');
-            $table->integer('id_history_posyandu');
-            $table->string('username',50);
-            $table->char('password',8);
+        Schema::create('kelurahan_table', function (Blueprint $table) {
+            $table->id();
+            $table->string('nama_kelurahan',20);
             $table->timestamps();
+        });
+        
+        Schema::table('kelurahan_table', function (Blueprint $table) {
+            $table->foreignId('id_kelurahan')->constrained('kecamatan_table');
         });
     }
 
@@ -29,6 +31,6 @@ class CreateUserTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user');
+        Schema::dropIfExists('kelurahan');
     }
 }
