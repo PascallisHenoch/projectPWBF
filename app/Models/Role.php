@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Role extends Model
 {
-    protected $table = "Role";
-    public function Role (){
+    protected $table = "role";
 
-        //diisi return $this->//has many/belongs to/many belongs(' ',' ',' ')
+    public function user_role() {
+        return $this->hasMany(User_Role::class, 'id_role', 'id');
     }
 }

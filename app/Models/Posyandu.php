@@ -7,9 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Posyandu extends Model
 {
-    protected $table = "Posyandu";
-    public function Posyandu (){
+    protected $table = "posyandu_table";
+    
+    public function kelurahan() {
+        return $this->belongsTo(Kelurahan::class, 'id', 'id_kelurahan');
+    }
 
-        //diisi return $this->//has many/belongs to/many belongs(' ',' ',' ')
+    public function balita() {
+        return $this->hasMany(Balita::class, 'id_posyandu', 'id');
     }
 }

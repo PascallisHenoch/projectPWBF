@@ -6,6 +6,6 @@
         <h5>{{ $post["author"] }}</h5>
         <p>{{ $post["body"] }}</p>
     </article>
-    <a href="/informasi">Back to posts</a>
+    <a href="/informasi">⏪Back to posts</a>
 @endsection
 

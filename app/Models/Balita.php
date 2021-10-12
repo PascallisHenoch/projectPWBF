@@ -7,9 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Balita extends Model
 {
-    protected $table = "Balita";
-    public function Balita (){
+    protected $table = "balita_table";
 
-        //diisi return $this->//has many/belongs to/many belongs(' ',' ',' ')
+    public function posyandu() {
+        return $this->belongsTo(Posyandu::class, 'id', 'id_posyandu');
+    }
+
+    public function history_posyandu() {
+        return $this->hasMany(History_Posyandu::class, 'id_history_posyandu', 'id');
     }
 }

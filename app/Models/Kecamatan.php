@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Kecamatan extends Model
 {
-    protected $table = "Kecamatan";
-    public function Kecamatan (){
+    protected $table = "kecamatan_table";
 
-        //diisi return $this->//has many/belongs to/many belongs(' ',' ',' ')
+    public function kelurahan() {
+        return $this->hasMany(Kelurahan::class, 'id_kelurahan', 'id');
     }
 }

@@ -3,6 +3,7 @@
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\KecamatanController;
 
 //Home
     Route::get('/', function () {
@@ -14,6 +15,7 @@ use App\Http\Controllers\PostController;
 
 //Informasi
     Route::get('/informasi', [PostController::class,'index']);
+    Route::get('/kecamatan', [KecamatanController::class,'index']);
     Route::get('posts/{slug}', [PostController::class, 'show']);
 
 //About

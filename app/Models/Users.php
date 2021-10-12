@@ -7,9 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Users extends Model
 {
-    protected $table = "Users";
-    public function Users (){
+    protected $table = "user_table";
 
-        //diisi return $this->//has many/belongs to/many belongs(' ',' ',' ')
+    public function history_posyandu() {
+        return $this->belongsTo(History_Posyandu::class, 'id', 'id_history_posyandu');
+    }
+
+    public function user_role() {
+        return $this->hasMany(User_Role::class, 'id_user', 'id');
     }
 }
