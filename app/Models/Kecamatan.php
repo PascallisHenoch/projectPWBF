@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Kecamatan extends Model
 {
-    use HasFactory;
+    protected $table = "Kecamatan";
+    public function Kecamatan (){
+
+        //diisi return $this->//has many/belongs to/many belongs(' ',' ',' ')
+    }
 }

@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Role extends Model
 {
-    use HasFactory;
+    protected $table = "Role";
+    public function Role (){
+
+        //diisi return $this->//has many/belongs to/many belongs(' ',' ',' ')
+    }
 }

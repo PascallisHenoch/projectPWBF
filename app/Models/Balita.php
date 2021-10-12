@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Balita extends Model
 {
-    use HasFactory;
+    protected $table = "Balita";
+    public function Balita (){
+
+        //diisi return $this->//has many/belongs to/many belongs(' ',' ',' ')
+    }
 }

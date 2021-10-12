@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Posyandu extends Model
 {
-    use HasFactory;
+    protected $table = "Posyandu";
+    public function Posyandu (){
+
+        //diisi return $this->//has many/belongs to/many belongs(' ',' ',' ')
+    }
 }

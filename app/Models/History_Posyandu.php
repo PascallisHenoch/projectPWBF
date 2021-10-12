@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class History_Posyandu extends Model
 {
-    use HasFactory;
+    protected $table = "History_Posyandu";
+    public function History_Posyandu (){
+
+        //diisi return $this->//has many/belongs to/many belongs(' ',' ',' ')
+    }
 }
