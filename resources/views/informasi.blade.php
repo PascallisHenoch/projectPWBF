@@ -5,9 +5,15 @@
     <article class="my-4">
         <img src="img/{{ $image1 }}" alt="{{ $image1 }}">
         @foreach ($posts as $post)
-        <article class="my-3">
-            <h2><a href="/posts/{{ $post->slug }}">{{ $post->title }}</a></h2>
+
+        <article class="mb-5 border-buttom pb-3">
+            <h2><a href="/posts/{{ $post->slug }}" class="text-decoration-none">{{ $post->title }}</a></h2>
+
+
+            <p>By. Kelompok3</p>
             <p>{{ $post->excerpt }}</p>
+
+            <a href="/posts/{{ $post->slug }}" class="text-decoration-none">Read More..</a>
         </article>
     </article>
     @endforeach
