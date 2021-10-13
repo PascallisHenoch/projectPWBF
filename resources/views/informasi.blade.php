@@ -10,7 +10,7 @@
             <h2><a href="/posts/{{ $post->slug }}" class="text-decoration-none">{{ $post->title }}</a></h2>
 
 
-            <p>By. Kelompok3</p>
+            <p>By. Kelompok4</p>
             <p>{{ $post->excerpt }}</p>
 
             <a href="/posts/{{ $post->slug }}" class="text-decoration-none">Read More..</a>
