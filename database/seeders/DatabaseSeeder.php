@@ -50,5 +50,62 @@ class DatabaseSeeder extends Seeder
             sebenarnya bisa dicegah.'
         ]);
 
+        Post::create([
+            'title' => 'Faktor-faktor yang Menyebabkan Stunting',
+            'slug' => 'faktor-faktor-yang-menyebabkan-stunting',
+            'excerpt' => 'Mengingat stunting adalah salah satu masalah kesehatan yang cukup membahayakan, memahami faktor penyebab stunting sangat penting untuk dilakukan. Dengan begitu, Anda bisa melakukan langkah-langkah preventif untuk menghindarinya. Berikut ini beberapa faktor penyebab stunting yang perlu Anda ketahui:',
+            'body' => 'Mengingat stunting adalah salah satu masalah kesehatan yang cukup membahayakan, memahami faktor penyebab stunting sangat penting untuk dilakukan. Dengan begitu, Anda bisa melakukan langkah-langkah preventif untuk menghindarinya. Berikut ini beberapa faktor penyebab stunting yang perlu Anda ketahui:
+                
+                </p><p>
+                <h5>
+                1. Kurang Gizi dalam Waktu Lama
+                </h5>
+                </p><p>
+                Tanpa disadari, penyebab stunting pada dasarnya sudah bisa terjadi sejak anak berada di dalam kandungan. Sebab, sejak di dalam kandungan, anak bisa jadi mengalami masalah kurang gizi. Penyebabnya, adalah karena sang ibu tidak memiliki akses terhadap makanan sehat dan bergizi, sehingga menyebabkan buah hatinya turut kekurangan nutrisi. Selain itu, rendahnya asupan vitamin dan mineral yang dikonsumsi ibu juga bisa ikut memengaruhi kondisi malnutrisi janin. Kekurangan gizi sejak dalam kandungan inilah yang juga bisa menjadi penyebab terbesar kondisi stunting pada anak.
+                </p><p></p><p>
+
+                <h5>
+                2. Pola Asuh Kurang Efektif
+                </h5>
+                </p><p>
+                Pola asuh yang kurang efektif juga menjadi salah satu penyebab stunting pada anak. Pola asuh di sini berkaitan dengan perilaku dan praktik pemberian makanan kepada anak. Bila orang tua tidak memberikan asupan gizi yang baik, maka anak bisa mengalami stunting. Selain itu, faktor ibu yang masa remaja dan kehamilannya kurang nutrisi serta masa laktasi yang kurang baik juga dapat memengaruhi pertumbuhan dan otak anak.
+                </p><p></p><p>
+
+                <h5>
+                3. Pola Makan
+                </h5>
+                </p><p>
+                Rendahnya akses terhadap makanan dengan nilai gizi tinggi serta menu makanan yang tidak seimbang dapat memengaruhi pertumbuhan anak dan meningkatkan risiko stunting. Hal ini dikarenakan ibu kurang mengerti tentang konsep gizi sebelum, saat, dan setelah melahirkan.
+                </p><p></p><p>
+
+                <h5>
+                4. Tidak Melakukan Perawatan Pasca Melahirkan
+                </h5>
+                </p><p>
+                Setelah bayi lahir, sebaiknya ibu dan bayi menerima perawatan pasca melahirkan. Sangat dianjurkan juga bagi bayi untuk langsung menerima asupan ASI agar dapat memperkuat sistem imunitasnya. Perawatan pasca melahirkan dianggap perlu untuk mendeteksi gangguan yang mungkin dialami ibu dan anak pasca persalinan.
+                </p><p></p><p>
+
+                <h5>
+                5. Gangguan Mental dan Hipertensi Pada Ibu
+                </h5>
+                </p><p>
+                Saat kehamilan, seorang ibu tidak boleh mengalami tekanan mental karena akan berpengaruh pada kondisi kesehatan anak yang dikandung. Jika seorang ibu mengalami gangguan mental dan hipertensi dalam masa kehamilan, risiko anak menderita stunting juga semakin tinggi.
+                </p><p></p><p>
+
+                <h5>
+                6. Sakit Infeksi yang Berulang
+                </h5>
+                </p><p>
+                Sakit infeksi yang berulang pada anak disebabkan oleh sistem imunitas tubuh yang tidak bekerja secara maksimal. Saat imunitas tubuh anak tidak berfungsi baik, maka risiko terkena berbagai jenis gangguan kesehatan, termasuk stunting, menjadi lebih tinggi. Karena stunting adalah penyakit yang rentan menyerang anak, ada baiknya Anda selalu memastikan imunitas buah hati terjaga sehingga terhindar dari infeksi.
+                </p><p></p><p>
+
+                <h5>
+                7. Faktor Sanitasi
+                </h5>
+                </p><p>
+                Sanitasi yang buruk serta keterbatasan akses pada air bersih akan mempertinggi risiko stunting pada anak. Bila anak tumbuh di lingkungan dengan sanitasi dan kondisi air yang tidak layak, hal ini dapat memengaruhi pertumbuhannya. Rendahnya akses terhadap pelayanan kesehatan juga merupakan salah satu faktor penyebab stunting. 
+                </p>
+                '
+        ]);
     }
 }
