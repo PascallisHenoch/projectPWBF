@@ -16,7 +16,7 @@ use App\Http\Controllers\KecamatanController;
 //Informasi
     Route::get('/informasi', [PostController::class,'index']);
     Route::get('/kecamatan', [KecamatanController::class,'index']);
-    Route::get('posts/{slug}', [PostController::class, 'show']);
+    Route::get('posts/{post:slug}', [PostController::class, 'show']);
 
 //About
     Route::get('/about', function () {

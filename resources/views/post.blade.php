@@ -2,9 +2,8 @@
 
 @section('container')
     <article>
-        <h1>{{ $post["title"] }}</h1>
-        <h5>{{ $post["author"] }}</h5>
-        <p>{{ $post["body"] }}</p>
+        <h1 class="mb-5">{{ $post->title }}</h1>
+            {!! $post->body !!}
     </article>
     <a href="/informasi">⏪Back to posts</a>
 @endsection
