@@ -1,4 +1,4 @@
-@extends('layouts/main')
+@extends('template')
 
 @section('container')
     <article>
