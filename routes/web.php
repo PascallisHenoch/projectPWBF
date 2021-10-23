@@ -17,7 +17,7 @@ use App\Http\Controllers\KecamatanController;
     Route::get('/home', function () {
         return view('home', [
             "title" => "Home",
-            "image2" => "asips.jpeg"
+            "image2" => "LOGO ASIPS.png"
         ]);
     });
 
