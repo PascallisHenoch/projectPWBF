@@ -1,7 +1,12 @@
 @extends('template')
 
 @section('container')
-    <h1>Aplikasi Surveilans & informasi Pencegahan Stunting</h1>
+
+<marquee behavior="alternate">
+<b><h1><strong>Aplikasi Surveilans & informasi Pencegahan Stunting</h1><br /></strong>
+</marquee>
+
+    
     <h5></h5>
     <script src="js/script.js"></script>
 
