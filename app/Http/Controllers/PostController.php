@@ -11,7 +11,7 @@ class PostController extends Controller
     
     {
         return view('informasi', [
-            "title" => "Informasi",
+            "title" =>"Informasi",
             "image1" => "stunting.jpg",
             "posts" => Post::all()
         ]);

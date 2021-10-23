@@ -1,7 +1,7 @@
 @extends('template')
 
 @section('container')
-    <h1>Informasi</h1>
+    <h1></h1>
     <article class="my-4">
         <img src="img/{{ $image1 }}" alt="{{ $image1 }}">
         @foreach ($posts as $post)
