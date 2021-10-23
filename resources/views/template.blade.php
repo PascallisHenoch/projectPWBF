@@ -41,7 +41,7 @@
     <!-- Brand Logo -->
     <a href="/home" class="brand-link">
       <img src="img/asips.jpeg" alt="ASIPS Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">ASIPS</span>
+      <span class="brand-text font-weight-light">Dashboard</span>
     </a>
 
     <!-- Sidebar -->
