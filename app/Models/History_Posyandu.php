@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class History_Posyandu extends Model
 {
     protected $table = "history_posyandu";
+    protected $fillable = ['tgl_posyandu', 'berat_badan_balita', 'tinggi_badan_balita'];
 
     public function balita() {
         return $this->belongsTo(Balita::class, 'id', 'id_history_posyandu');

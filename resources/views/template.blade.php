@@ -127,7 +127,7 @@
                 <a href="/about" class="nav-link">
                 <i class="nav-icon fas fa-info-circle"></i>
                 <p>
-                    About
+                    Tentang Kami
                 </p>
                 </a>
             </li>
@@ -167,7 +167,7 @@
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 1.0.0
     </div>
-    <strong>Copyright &copy; 2021 ASIPS | kelompok 4.</strong> All rights reserved.
+    <strong>Copyright &copy; 2021 ASIPS | Kelompok 4.</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->

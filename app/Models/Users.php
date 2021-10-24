@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Users extends Model
 {
     protected $table = "user_table";
+    protected $fillable = ['username', 'password'];
 
     public function history_posyandu() {
         return $this->belongsTo(History_Posyandu::class, 'id', 'id_history_posyandu');

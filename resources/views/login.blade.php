@@ -33,7 +33,7 @@
         <a href="/" class="h1"><b>ASIPS</b></a>
       </div>
       <div class="card-body">
-        <p class="login-box-msg">Sign in here</p>
+        <p class="login-box-msg">LOGIN</p>
 
         <form action="/login" method="post">
           <div class="input-group mb-3">
@@ -55,7 +55,7 @@
           <div class="row">
             <!-- /.col -->
             <div class="offset-md-8 col-4">
-              <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+              <button type="submit" class="btn btn-primary btn-block">LOGIN</button>
             </div>
             <!-- /.col -->
           </div>
