@@ -2,10 +2,7 @@
 
 @section('container')
  
-	<h2>www.malasngoding.com</h2>
-	<h3>Data Pegawai</h3>
- 
-	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+	<a href="/kecamatan/create" class="btn btn-success"> + Tambah Kecamatan Baru</a>
 	
 	<br/>
 	<br/>
@@ -13,19 +10,19 @@
     <table id="example1" class="table table-bordered table-hover">
 		<thead>
 			<tr>
+				<th style="width: 1%;">No</th>
 				<th>Nama</th>
-				<th>Opsi</th>
+				<th style="width: 1%;">Edit</th>
+				<th style="width: 1%;">Hapus</th>
 			</tr>
 		</thead>
 		<tbody>
-			@foreach($kecamatan as $p)
+			@foreach($kecamatan as $k => $v)
 			<tr>
-				<td>{{ $p->nama_kecamatan }}</td>
-				<td>
-					<a href="/kecamatan/edit/{{ $p->id }}">Edit</a>
-					|
-					<a href="/kecamatan/hapus/{{ $p->id }}">Hapus</a>
-				</td>
+				<td class="text-wrap text-center">{{ $k + 1 }}</td>
+				<td>{{ $v->nama_kecamatan }}</td>
+				<td class="text-wrap"><a href="/kecamatan/edit/{{ $v->id }}" class="btn btn-primary">Edit</a></td>
+				<td class="text-wrap"><a href="/kecamatan/destroy/{{ $v->id }}" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin ?')">Hapus</a></td>
 			</tr>
 			@endforeach
 		</tbody>
@@ -34,5 +31,9 @@
 @endsection
 
 @section('script')
-    
+	<script>
+		$(function () {
+			$('#example1').DataTable();
+		});
+  </script>
 @endsection

@@ -23,6 +23,11 @@ use App\Http\Controllers\KecamatanController;
 
 //Kecamatan
     Route::get('/kecamatan', [KecamatanController::class,'index']);
+    Route::get('/kecamatan/create', [KecamatanController::class,'create']);
+    Route::post('/kecamatan/store', [KecamatanController::class,'store']);
+    Route::get('/kecamatan/edit/{id}', [KecamatanController::class,'edit']);
+    Route::post('/kecamatan/update/{id}', [KecamatanController::class,'update']);
+    Route::get('/kecamatan/destroy/{id}', [KecamatanController::class,'destroy']);
 
 //Informasi
     Route::get('/informasi', [PostController::class,'index']);

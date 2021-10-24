@@ -44,7 +44,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="/home" class="brand-link">
-      <img src="img/LOGO ASIPS.png" alt="ASIPS Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="{{ asset('img/LOGO ASIPS.png') }}" alt="ASIPS Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Home</span>
     </a>
 
@@ -204,19 +204,6 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('admin/dist/js/demo.js') }}"></script>
 
-<script>
-  $(function () {
-      $('#example1').DataTable({
-        "paging": true,
-        "lengthChange": true,
-        "searching": true,
-        "ordering": true,
-        "info": true,
-        "autoWidth": true,
-        "responsive": true,
-      });
-  });
-</script>
 @yield('script')
 </body>
 </html>
