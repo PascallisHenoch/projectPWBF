@@ -21,9 +21,11 @@ use App\Http\Controllers\KecamatanController;
         ]);
     });
 
+//Kecamatan
+    Route::get('/kecamatan', [KecamatanController::class,'index']);
+
 //Informasi
     Route::get('/informasi', [PostController::class,'index']);
-    // Route::get('/kecamatan', [KecamatanController::class,'index']);
     Route::get('posts/{post:slug}', [PostController::class, 'show']);
 
 //About
