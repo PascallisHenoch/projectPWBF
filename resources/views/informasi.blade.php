@@ -8,9 +8,6 @@
 
         <article class="mb-5 border-buttom pb-3">
             <h2><a href="/posts/{{ $post->slug }}" class="text-decoration-none">{{ $post->title }}</a></h2>
-
-
-            <p>By. Kelompok4</p>
             <p>{{ $post->excerpt }}</p>
 
             <a href="/posts/{{ $post->slug }}" class="text-decoration-none">Read More..</a>
