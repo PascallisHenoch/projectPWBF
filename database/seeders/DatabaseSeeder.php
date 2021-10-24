@@ -23,6 +23,12 @@ class DatabaseSeeder extends Seeder
             'password' => 'PascallisHenoch'
         ]);
 
+        User::create([
+            'name' => 'Adhiba Alya',
+            'email' => 'adhiba.alya.firdaus-2020@vokasi.unair.ac.id',
+            'password' => 'AdhibaAlya'
+        ]);
+
         Post::create([
             'title' => 'Pengertian ASIPS',
             'slug' => 'pengertian-asips',
