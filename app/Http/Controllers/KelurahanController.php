@@ -30,7 +30,9 @@ class KelurahanController extends Controller
      */
     public function create()
     {
-        //
+        return view('kelurahan/tambah', [
+            'title' => 'Tambah kelurahan'
+        ]);
     }
 
     /**
@@ -41,7 +43,12 @@ class KelurahanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        DB::table('kelurahan_table')->insert([
+            'nama_kelurahan' => $request->nama_kelurahan,
+            'created_at' => date("Y-m-d H:i:s")
+        ]);
+        
+        return redirect('/kelurahan');
     }
 
     /**
@@ -63,7 +70,12 @@ class KelurahanController extends Controller
      */
     public function edit($id)
     {
-        //
+        $kelurahan = DB::table('kelurahan_table')->where('id',$id)->get();
+        
+        return view('kelurahan/edit',[
+            'title' => 'Edit Kelurahan',
+            'kelurahan' => $kelurahan
+        ]);
     }
 
     /**
@@ -75,7 +87,12 @@ class KelurahanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        DB::table('kelurahan_table')->where('id',$request->id)->update([
+            'nama_kelurahan' => $request->nama_kelurahan,
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+        
+        return redirect('/kelurahan');
     }
 
     /**
@@ -86,6 +103,8 @@ class KelurahanController extends Controller
      */
     public function destroy($id)
     {
-        //
+        DB::table('kelurahan_table')->where('id',$id)->delete();
+		
+        return redirect('/kelurahan');
     }
 }

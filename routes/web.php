@@ -6,6 +6,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\KecamatanController;
 use App\Http\Controllers\KelurahanController;
+use App\Http\Controllers\PosyanduController;
 
 //Home
     Route::get('/', function () {
@@ -37,6 +38,14 @@ use App\Http\Controllers\KelurahanController;
     Route::get('/kelurahan/edit/{id}', [KelurahanController::class,'edit']);
     Route::post('/kelurahan/update/{id}', [KelurahanController::class,'update']);
     Route::get('/kelurahan/destroy/{id}', [KelurahanController::class,'destroy']);
+
+//Posyandu
+    Route::get('/posyandu', [PosyanduController::class,'index']);
+    Route::get('/posyandu/create', [osyanduController::class,'create']);
+    Route::post('/posyandu/store', [osyanduController::class,'store']);
+    Route::get('/posyandu/edit/{id}', [osyanduController::class,'edit']);
+    Route::post('/posyandu/update/{id}', [osyanduController::class,'update']);
+    Route::get('/posyandu/destroy/{id}', [osyanduController::class,'destroy']);
 
 //Informasi
     Route::get('/informasi', [PostController::class,'index']);
