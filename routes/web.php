@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\KecamatanController;
+use App\Http\Controllers\KelurahanController;
 
 //Home
     Route::get('/', function () {
@@ -28,6 +29,14 @@ use App\Http\Controllers\KecamatanController;
     Route::get('/kecamatan/edit/{id}', [KecamatanController::class,'edit']);
     Route::post('/kecamatan/update/{id}', [KecamatanController::class,'update']);
     Route::get('/kecamatan/destroy/{id}', [KecamatanController::class,'destroy']);
+
+//Kelurahan
+    Route::get('/kelurahan', [KelurahanController::class,'index']);
+    Route::get('/kelurahan/create', [KelurahanController::class,'create']);
+    Route::post('/kelurahan/store', [KelurahanController::class,'store']);
+    Route::get('/kelurahan/edit/{id}', [KelurahanController::class,'edit']);
+    Route::post('/kelurahan/update/{id}', [KelurahanController::class,'update']);
+    Route::get('/kelurahan/destroy/{id}', [KelurahanController::class,'destroy']);
 
 //Informasi
     Route::get('/informasi', [PostController::class,'index']);

@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use Illuminate\Http\Request;
-use App\Models\Kelurahan;
+use App\Models\kelurahan;
 
 class KelurahanController extends Controller
 {
@@ -14,7 +15,12 @@ class KelurahanController extends Controller
      */
     public function index()
     {
-        //
+        $kelurahan = Kelurahan::all();
+ 
+    	return view('kelurahan/index', [
+            'title' => 'Daftar Kelurahan',
+            'kelurahan' => $kelurahan
+        ]);
     }
 
     /**
