@@ -41,11 +41,11 @@ use App\Http\Controllers\PosyanduController;
 
 //Posyandu
     Route::get('/posyandu', [PosyanduController::class,'index']);
-    Route::get('/posyandu/create', [osyanduController::class,'create']);
-    Route::post('/posyandu/store', [osyanduController::class,'store']);
-    Route::get('/posyandu/edit/{id}', [osyanduController::class,'edit']);
-    Route::post('/posyandu/update/{id}', [osyanduController::class,'update']);
-    Route::get('/posyandu/destroy/{id}', [osyanduController::class,'destroy']);
+    Route::get('/posyandu/create', [PosyanduController::class,'create']);
+    Route::post('/posyandu/store', [PosyanduController::class,'store']);
+    Route::get('/posyandu/edit/{id}', [PosyanduController::class,'edit']);
+    Route::post('/posyandu/update/{id}', [PosyanduController::class,'update']);
+    Route::get('/posyandu/destroy/{id}', [PosyanduController::class,'destroy']);
 
 //Informasi
     Route::get('/informasi', [PostController::class,'index']);

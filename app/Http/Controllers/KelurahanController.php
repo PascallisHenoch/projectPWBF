@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use DB;
 use Illuminate\Http\Request;
-use App\Models\kelurahan;
+use App\Models\Kelurahan;
+use App\Models\Kecamatan;
 
 class KelurahanController extends Controller
 {
@@ -30,8 +31,11 @@ class KelurahanController extends Controller
      */
     public function create()
     {
+        $kecamatan = Kecamatan::all();
+
         return view('kelurahan/tambah', [
-            'title' => 'Tambah kelurahan'
+            'title' => 'Tambah Kelurahan',
+            'kecamatan' => $kecamatan
         ]);
     }
 
@@ -44,6 +48,7 @@ class KelurahanController extends Controller
     public function store(Request $request)
     {
         DB::table('kelurahan_table')->insert([
+            'id_kelurahan' => $request->id_kelurahan,
             'nama_kelurahan' => $request->nama_kelurahan,
             'created_at' => date("Y-m-d H:i:s")
         ]);
@@ -70,10 +75,12 @@ class KelurahanController extends Controller
      */
     public function edit($id)
     {
+        $kecamatan = Kecamatan::all();
         $kelurahan = DB::table('kelurahan_table')->where('id',$id)->get();
         
         return view('kelurahan/edit',[
             'title' => 'Edit Kelurahan',
+            'kecamatan' => $kecamatan,
             'kelurahan' => $kelurahan
         ]);
     }
@@ -88,6 +95,7 @@ class KelurahanController extends Controller
     public function update(Request $request, $id)
     {
         DB::table('kelurahan_table')->where('id',$request->id)->update([
+            'id_kelurahan' => $request->id_kelurahan,
             'nama_kelurahan' => $request->nama_kelurahan,
             'updated_at' => date("Y-m-d H:i:s")
         ]);

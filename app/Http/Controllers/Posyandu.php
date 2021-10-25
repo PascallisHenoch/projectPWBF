@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use Illuminate\Http\Request;
+use App\Models\Posyandu;
 
-class Posyandu extends Controller
+class PosyanduController extends Controller
+
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +16,12 @@ class Posyandu extends Controller
      */
     public function index()
     {
-        //
+        $posyandu = Posyandu::all();
+ 
+    	return view('posyandu/index', [
+            'title' => 'Daftar posyandu',
+            'posyandu' => $posyandu
+        ]);
     }
 
     /**
@@ -23,7 +31,9 @@ class Posyandu extends Controller
      */
     public function create()
     {
-        //
+        return view('posyandu/tambah', [
+            'title' => 'Tambah Posyandu'
+        ]);
     }
 
     /**
@@ -34,7 +44,12 @@ class Posyandu extends Controller
      */
     public function store(Request $request)
     {
-        //
+        DB::table('posyandu_table')->insert([
+            'nama_posyandu' => $request->nama_posyandu,
+            'created_at' => date("Y-m-d H:i:s")
+        ]);
+        
+        return redirect('/posyandu');
     }
 
     /**
@@ -56,7 +71,12 @@ class Posyandu extends Controller
      */
     public function edit($id)
     {
-        //
+        $posyandu = DB::table('posyandu_table')->where('id',$id)->get();
+        
+        return view('posyandu/edit',[
+            'title' => 'Edit Posyandu',
+            'posyandu' => $posyandu
+        ]);
     }
 
     /**
@@ -68,7 +88,12 @@ class Posyandu extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        DB::table('posyandu_table')->where('id',$request->id)->update([
+            'nama_posyandu' => $request->nama_posyandu,
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+        
+        return redirect('/posyandu');
     }
 
     /**
@@ -79,6 +104,8 @@ class Posyandu extends Controller
      */
     public function destroy($id)
     {
-        //
+        DB::table('posyandu_table')->where('id',$id)->delete();
+		
+        return redirect('/posyandu');
     }
 }
