@@ -8,7 +8,9 @@ use App\Http\Controllers\KecamatanController;
 use App\Http\Controllers\KelurahanController;
 use App\Http\Controllers\PosyanduController;
 
-//Home
+
+//==================================================
+//======================LOGIN=======================
     Route::get('/', function () {
         return view('login', [
             "title" => "Login"
@@ -16,12 +18,40 @@ use App\Http\Controllers\PosyanduController;
     });
     Route::post('/login', [AuthController::class,'login']);
 
+
+//==================================================
+//======================HOME========================
     Route::get('/home', function () {
         return view('home', [
             "title" => "Home",
             "image2" => "LOGO ASIPS.png"
         ]);
     });
+
+
+//==================================================
+//===================INFORMASI======================
+Route::get('/informasi', [PostController::class,'index']);
+Route::get('posts/{post:slug}', [PostController::class, 'show']);
+
+
+//==================================================
+//=====================ABOUT========================
+Route::get('/about', function () {
+    return view('about', [
+        "title" => "About",
+        "nama1" => "Pascallis Henoch",
+        "nim1" => "152011513025",
+        "paskal1" => "paskal1.jpeg",
+        "nama2" => "Adhiba Alya",
+        "nim2" => "152011513004",
+        "dhiba1" => "dhiba1.png",
+    ]);
+});
+
+
+//==================================================
+//======================CRUD========================
 
 //Kecamatan
     Route::get('/kecamatan', [KecamatanController::class,'index']);
@@ -47,22 +77,7 @@ use App\Http\Controllers\PosyanduController;
     Route::post('/posyandu/update/{id}', [osyanduController::class,'update']);
     Route::get('/posyandu/destroy/{id}', [osyanduController::class,'destroy']);
 
-//Informasi
-    Route::get('/informasi', [PostController::class,'index']);
-    Route::get('posts/{post:slug}', [PostController::class, 'show']);
 
-//About
-    Route::get('/about', function () {
-        return view('about', [
-            "title" => "About",
-            "nama1" => "Pascallis Henoch",
-            "nim1" => "152011513025",
-            "paskal1" => "paskal1.jpeg",
-            "nama2" => "Adhiba Alya",
-            "nim2" => "152011513004",
-            "dhiba1" => "dhiba1.png",
-        ]);
-    });
 
 
 
