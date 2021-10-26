@@ -22,7 +22,9 @@ class History_PosyanduFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'tgl_posyandu' => $this->faker->date(),
+            'berat_badan_balita' => $this->faker->sentence(2),
+            'tinggi_badan_balita' => $this->faker->sentence(3),
         ];
     }
 }

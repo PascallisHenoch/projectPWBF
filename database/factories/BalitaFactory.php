@@ -22,7 +22,12 @@ class BalitaFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nama_balita' => $this->faker->name(),
+            'nik_ortu' => $this->faker->sentence(16),
+            'nama_ortu' => $this->faker->name(),
+            'tgllahir_balita' => $this->faker->date(),
+            'jk_balita' => $this->faker->randomElement(['M','F']),
+            'status' => $this->faker->sentence(10)
         ];
     }
 }

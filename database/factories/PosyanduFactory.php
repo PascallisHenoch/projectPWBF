@@ -22,7 +22,8 @@ class PosyanduFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nama_posyandu' => $this->faker->name(),
+            'alamat_posyandu' => $this->faker->date()
         ];
     }
 }

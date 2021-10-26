@@ -27,8 +27,6 @@ class InformasiFactory extends Factory
             'excerpt'=>$this->faker->paragraph(),
             'body'=>$this->faker->paragraph(mt_rand(5,10))
 
-            
-            
         ];
     }
 }

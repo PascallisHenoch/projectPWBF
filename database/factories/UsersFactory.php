@@ -22,7 +22,8 @@ class UsersFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'username' => $this->faker->name(),
+            'password' => $this->faker->password(8, 10)
         ];
     }
 }

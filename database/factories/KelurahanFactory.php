@@ -22,7 +22,7 @@ class KelurahanFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nama_kelurahan' => $this->faker->name()
         ];
     }
 }
