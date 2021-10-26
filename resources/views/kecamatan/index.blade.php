@@ -11,7 +11,7 @@
 		<thead>
 			<tr>
 				<th style="width: 1%;">No</th>
-				<th>Nama</th>
+				<th>Nama Kecamatan</th>
 				<th style="width: 1%;">Edit</th>
 				<th style="width: 1%;">Hapus</th>
 			</tr>
