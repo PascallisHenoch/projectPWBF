@@ -3,8 +3,19 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\User;
+use App\Models\Balita;
+use App\Models\History_Posyandu;
+use App\Models\Kecamatan;
+use App\Models\Kelurahan;
 use App\Models\Post;
+use App\Models\Posyandu;
+use App\Models\Role;
+use App\Models\User_Role;
+use App\Models\User;
+use App\Models\Users;
+
+
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,6 +27,14 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        Balita::Factory(100)->create();
+        History_Posyandu::Factory(10)->create();
+        Kecamatan::Factory(10)->create();
+        Kelurahan::Factory(50)->create();
+        Posyandu::Factory(10)->create();
+        Role::Factory(50)->create();
+        User_Role::Factory(50)->create();
+        Users::Factory(100)->create();
 
         User::create([
             'name' => 'Pascallis Henoch',
