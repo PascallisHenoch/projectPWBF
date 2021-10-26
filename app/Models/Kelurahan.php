@@ -12,7 +12,7 @@ class Kelurahan extends Model
 
 
     public function kecamatan() {
-        return $this->belongsTo(Kecamatan::class, 'id', 'id_kelurahan');
+        return $this->belongsTo(Kecamatan::class, 'id_kelurahan', 'id');
     }
 
     public function posyandu() {

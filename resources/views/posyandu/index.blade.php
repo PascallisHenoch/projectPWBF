@@ -2,7 +2,7 @@
 
 @section('container')
  
-	<a href="/kelurahan/create" class="btn btn-success"> + Tambah Kelurahan Baru</a>
+	<a href="/posyandu/create" class="btn btn-success"> + Tambah Posyandu Baru</a>
 	
 	<br/>
 	<br/>
@@ -11,20 +11,18 @@
 		<thead>
 			<tr>
 				<th style="width: 1%;">No</th>
-				<th>Nama Kecamatan</th>
-				<th>Nama Kelurahan</th>
+				<th>Nama</th>
 				<th style="width: 1%;">Edit</th>
 				<th style="width: 1%;">Hapus</th>
 			</tr>
 		</thead>
 		<tbody>
-			@foreach($kelurahan as $k => $v)
+			@foreach($posyandu as $k => $v)
 			<tr>
 				<td class="text-wrap text-center">{{ $k + 1 }}</td>
-				<td>{{ $v->kecamatan->nama_kecamatan }}</td>
-				<td>{{ $v->nama_kelurahan }}</td>
-				<td class="text-wrap"><a href="/kelurahan/edit/{{ $v->id }}" class="btn btn-primary">Edit</a></td>
-				<td class="text-wrap"><a href="/kelurahan/destroy/{{ $v->id }}" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin ?')">Hapus</a></td>
+				<td>{{ $v->nama_posyandu }}</td>
+				<td class="text-wrap"><a href="/posyandu/edit/{{ $v->id }}" class="btn btn-primary">Edit</a></td>
+				<td class="text-wrap"><a href="/posyandu/destroy/{{ $v->id }}" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin ?')">Hapus</a></td>
 			</tr>
 			@endforeach
 		</tbody>
