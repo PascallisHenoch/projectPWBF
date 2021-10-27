@@ -11,7 +11,10 @@
 		<thead>
 			<tr>
 				<th style="width: 1%;">No</th>
-				<th>Nama</th>
+				<th>Nama Posyandu</th>
+				<th>Nama Kecamatan</th>
+				<th>Nama Kelurahan</th>
+				<th>Alamat Posyandu</th>
 				<th style="width: 1%;">Edit</th>
 				<th style="width: 1%;">Hapus</th>
 			</tr>
@@ -21,6 +24,9 @@
 			<tr>
 				<td class="text-wrap text-center">{{ $k + 1 }}</td>
 				<td>{{ $v->nama_posyandu }}</td>
+				<td>{{ $v->kelurahan->kecamatan->nama_kecamatan }}</td>
+				<td>{{ $v->kelurahan->nama_kelurahan }}</td>
+				<td>{{ $v->alamat_posyandu }}</td>
 				<td class="text-wrap"><a href="/posyandu/edit/{{ $v->id }}" class="btn btn-primary">Edit</a></td>
 				<td class="text-wrap"><a href="/posyandu/destroy/{{ $v->id }}" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin ?')">Hapus</a></td>
 			</tr>

@@ -183,7 +183,8 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="{{ asset('admin/plugins/jquery/jquery.min.js') }}"></script>
+{{-- <script src="{{ asset('admin/plugins/jquery/jquery.min.js') }}"></script> --}}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <!-- DataTables  & Plugins -->
@@ -203,6 +204,9 @@
 <script src="{{ asset('admin/dist/js/adminlte.min.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('admin/dist/js/demo.js') }}"></script>
+<!-- Data Chained -->
+{{-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> --}}
+<script src="{{ asset('js/jquery_chained/jquery.chained.js') }}"></script>
 
 @yield('script')
 </body>

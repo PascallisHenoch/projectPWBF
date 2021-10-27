@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use DB;
 use Illuminate\Http\Request;
 use App\Models\Posyandu;
+use App\Models\Kecamatan;
+use App\Models\Kelurahan;
 
 class PosyanduController extends Controller
 
@@ -31,8 +32,13 @@ class PosyanduController extends Controller
      */
     public function create()
     {
+        $kecamatan = Kecamatan::all();
+        $kelurahan = Kelurahan::all();
+
         return view('posyandu/tambah', [
-            'title' => 'Tambah Posyandu'
+            'title' => 'Tambah Posyandu',
+            'kecamatan' => $kecamatan,
+            'kelurahan' => $kelurahan
         ]);
     }
 
@@ -44,8 +50,10 @@ class PosyanduController extends Controller
      */
     public function store(Request $request)
     {
-        DB::table('posyandu_table')->insert([
+        Posyandu::create([
             'nama_posyandu' => $request->nama_posyandu,
+            'alamat_posyandu' => $request->alamat_posyandu,
+            'id_kelurahan' => $request->id_kelurahan,
             'created_at' => date("Y-m-d H:i:s")
         ]);
         
@@ -71,10 +79,14 @@ class PosyanduController extends Controller
      */
     public function edit($id)
     {
-        $posyandu = DB::table('posyandu_table')->where('id',$id)->get();
+        $posyandu = Posyandu::find($id);
+        $kecamatan = Kecamatan::all();
+        $kelurahan = Kelurahan::all();
         
         return view('posyandu/edit',[
             'title' => 'Edit Posyandu',
+            'kecamatan' => $kecamatan,
+            'kelurahan' => $kelurahan,
             'posyandu' => $posyandu
         ]);
     }
@@ -88,8 +100,10 @@ class PosyanduController extends Controller
      */
     public function update(Request $request, $id)
     {
-        DB::table('posyandu_table')->where('id',$request->id)->update([
+        Posyandu::where('id', $id)->update([
             'nama_posyandu' => $request->nama_posyandu,
+            'alamat_posyandu' => $request->alamat_posyandu,
+            'id_kelurahan' => $request->id_kelurahan,
             'updated_at' => date("Y-m-d H:i:s")
         ]);
         
@@ -104,7 +118,7 @@ class PosyanduController extends Controller
      */
     public function destroy($id)
     {
-        DB::table('posyandu_table')->where('id',$id)->delete();
+        Posyandu::destroy($id);
 		
         return redirect('/posyandu');
     }
