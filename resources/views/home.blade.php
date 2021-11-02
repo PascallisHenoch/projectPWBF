@@ -2,13 +2,26 @@
 
 @section('container')
 
-<marquee behavior="alternate">
-<b><h1><strong>Aplikasi Surveilans & informasi Pencegahan Stunting</h1><br /></strong>
-</marquee>
+<br/>
+<b><h2><strong><p align="center">Aplikasi Surveilans & informasi Pencegahan Stunting</h2></b></strong>
 
-    
     <h5></h5>
     <script src="js/script.js"></script>
+    <br/>
+    
+    <html>
+      <font face="Sans-serif">
+        <body><p style="text-indent: 40px;">
+          Aplikasi Surveilans & informasi Pencegahan Stunting) adalah aplikasi tepat guna yang 
+          dapat menghubungkan antara kader posyandu dengan pihak puskesmas dan orang tua dalam pencatatan 
+          status gizi balita sebagai upaya pencegahan stunting. Aplikasi ini bertujuan untuk melacak, 
+          mencatat dan merekam status gizi balita secara tepat, cepat dan sesuai dengan pengukuran di 
+          masing - masing posyandu. Sehingga jika ada balita yang terindikasi mengalami stunting maka 
+          langsung terlihat pada rekap laporan yang ada pada masing – masing posyandu.
+        </p></body>
+      </font> 
+    </html>
+    <br/>
 
     {{-- <img src="img/{{ $image2 }}" alt="{{ $image2 }}" width="300"> --}}
 
@@ -20,15 +33,15 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item text-center active">
-            <img class="w-70" src="img/{{ $image2 }}" alt="First slide">
+            <img src="img/LOGO ASIPS.png" width="300px" height="300px" alt="First slide">
           </div>
           <div class="carousel-item text-center">
             <h6></h6>
-            <img class="w-35" src="img/child.png" alt="Second slide">
+            <img src="img/child.png" width="500px" height="300px" alt="Second slide">
           </div>
           <div class="carousel-item text-center">
             <h6></h6>
-            <img class="w-40" src="img/cegah stunting.png" alt="Third slide">
+            <img src="img/cegah stunting.png" width="500px" height="300px" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -41,7 +54,8 @@
         </a>
       </div>
 
-
+      
+      
 @endsection
         
    
