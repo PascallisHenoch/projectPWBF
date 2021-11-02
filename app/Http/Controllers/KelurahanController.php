@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use DB;
 use Illuminate\Http\Request;
 use App\Models\Kelurahan;
 use App\Models\Kecamatan;
@@ -47,7 +46,7 @@ class KelurahanController extends Controller
      */
     public function store(Request $request)
     {
-        DB::table('kelurahan_table')->insert([
+        Kelurahan::create([
             'id_kelurahan' => $request->id_kelurahan,
             'nama_kelurahan' => $request->nama_kelurahan,
             'created_at' => date("Y-m-d H:i:s")
@@ -76,7 +75,7 @@ class KelurahanController extends Controller
     public function edit($id)
     {
         $kecamatan = Kecamatan::all();
-        $kelurahan = DB::table('kelurahan_table')->where('id',$id)->get();
+        $kelurahan = Kelurahan::find($id);
         
         return view('kelurahan/edit',[
             'title' => 'Edit Kelurahan',
@@ -94,7 +93,7 @@ class KelurahanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        DB::table('kelurahan_table')->where('id',$request->id)->update([
+        Kelurahan::where('id', $id)->update([
             'id_kelurahan' => $request->id_kelurahan,
             'nama_kelurahan' => $request->nama_kelurahan,
             'updated_at' => date("Y-m-d H:i:s")
@@ -111,7 +110,7 @@ class KelurahanController extends Controller
      */
     public function destroy($id)
     {
-        DB::table('kelurahan_table')->where('id',$id)->delete();
+        Kelurahan::destroy($id);
 		
         return redirect('/kelurahan');
     }

@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use DB;
 use Illuminate\Http\Request;
 use App\Models\Kecamatan;
 
@@ -43,7 +42,7 @@ class KecamatanController extends Controller
      */
     public function store(Request $request)
     {
-        DB::table('kecamatan_table')->insert([
+        Kecamatan::create([
             'nama_kecamatan' => $request->nama_kecamatan,
             'created_at' => date("Y-m-d H:i:s")
         ]);
@@ -70,7 +69,7 @@ class KecamatanController extends Controller
      */
     public function edit($id)
     {
-        $kecamatan = DB::table('kecamatan_table')->where('id',$id)->get();
+        $kecamatan = Kecamatan::find($id);
         
         return view('kecamatan/edit',[
             'title' => 'Edit Kecamatan',
@@ -87,7 +86,7 @@ class KecamatanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        DB::table('kecamatan_table')->where('id',$request->id)->update([
+        Kecamatan::where('id', $id)->update([
             'nama_kecamatan' => $request->nama_kecamatan,
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -103,7 +102,7 @@ class KecamatanController extends Controller
      */
     public function destroy($id)
     {
-        DB::table('kecamatan_table')->where('id',$id)->delete();
+        Kecamatan::destroy($id);
 		
         return redirect('/kecamatan');
     }

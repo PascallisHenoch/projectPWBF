@@ -9,7 +9,6 @@
 
 	<form action="/posyandu/update/{{ $posyandu->id }}" method="post">
 		{{ csrf_field() }}
-		<input type="hidden" name="id" value="{{ $posyandu->id }}">
 		<div class="form-group">
 			<label for="nama_posyandu">Nama Posyandu</label>
 			<input type="text" class="form-control" id="nama_posyandu" name="nama_posyandu" placeholder="Nama Posyandu" value="{{ $posyandu->nama_posyandu }}" required>

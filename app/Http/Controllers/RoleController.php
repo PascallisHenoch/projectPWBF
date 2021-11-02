@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Role;
 
-class Role extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,12 @@ class Role extends Controller
      */
     public function index()
     {
-        //
+        $role = Role::all();
+ 
+    	return view('role/index', [
+            'title' => 'Daftar Role',
+            'role' => $role
+        ]);
     }
 
     /**
@@ -56,7 +62,12 @@ class Role extends Controller
      */
     public function edit($id)
     {
-        //
+        $role = Role::find($id);
+        
+        return view('role/edit',[
+            'title' => 'Edit Role',
+            'role' => $role
+        ]);
     }
 
     /**
@@ -68,7 +79,12 @@ class Role extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Role::where('id', $id)->update([
+            'role' => $request->nama_role,
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+        
+        return redirect('/role');
     }
 
     /**

@@ -4,6 +4,7 @@ use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\KecamatanController;
 use App\Http\Controllers\KelurahanController;
 use App\Http\Controllers\PosyanduController;
@@ -52,6 +53,11 @@ Route::get('/about', function () {
 
 //==================================================
 //======================CRUD========================
+
+//Role
+    Route::get('/role', [RoleController::class,'index']);
+    Route::get('/role/edit/{id}', [RoleController::class,'edit']);
+    Route::post('/role/update/{id}', [RoleController::class,'update']);
 
 //Kecamatan
     Route::get('/kecamatan', [KecamatanController::class,'index']);

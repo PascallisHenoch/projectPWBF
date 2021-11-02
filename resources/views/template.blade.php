@@ -68,12 +68,20 @@
                with font-awesome or any other icon font library -->
             <li class="nav-header">MASTER</li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="/role" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
                 <p>
                     Role
                 </p>
                 </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                  User
+              </p>
+              </a>
             </li>
             <li class="nav-item">
                 <a href="/kecamatan" class="nav-link">
