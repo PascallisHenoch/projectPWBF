@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class User_Role extends Model
 {
+    use HasFactory;
     protected $table = "user_role_table";
 
     public function user() {
