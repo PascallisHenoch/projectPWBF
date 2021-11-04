@@ -1,1 +1,0 @@
-alert("Hallo👋🏻, Selamat datang di project ASIPS!")
