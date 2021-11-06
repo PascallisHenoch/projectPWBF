@@ -63,12 +63,12 @@
           <li><a class="nav-link scrollto" href="#gallery">Galeri</a></li>
           <li><a class="nav-link scrollto" href="#faq">Pertanyaan</a></li>
           <li><a class="nav-link scrollto" href="#doctors">Tentang Kami</a></li>
-          <li><a class="nav-link scrollto" href="/home">Orang Tua</a></li>
-          <li><a class="nav-link scrollto" href="/home">Kader Posyandu</a></li>
+          <li><a class="nav-link scrollto" href="/login">Orang Tua</a></li>
+          <li><a class="nav-link scrollto" href="/login">Kader Posyandu</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="/home" class="appointment-btn scrollto"><span class="d-none d-md-inline">Admin</span></a>
+      <a href="/login" class="appointment-btn scrollto"><span class="d-none d-md-inline">Admin</span></a>
     </div>
   </header><!-- End Header -->
 
