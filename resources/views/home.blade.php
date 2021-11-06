@@ -33,15 +33,15 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item text-center active">
-            <img src="img/LOGO ASIPS.png" width="300px" height="300px" alt="First slide">
+            <img src="img/gallery/11.jpg" width="300px" height="400px" alt="First slide">
           </div>
           <div class="carousel-item text-center">
             <h6></h6>
-            <img src="img/child.png" width="500px" height="300px" alt="Second slide">
+            <img src="img/gallery/22.png" width="300px" height="400px" alt="Second slide">
           </div>
           <div class="carousel-item text-center">
             <h6></h6>
-            <img src="img/cegah stunting.png" width="500px" height="300px" alt="Third slide">
+            <img src="img/gallery/77.jpeg" width="300px" height="400px" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
