@@ -339,52 +339,54 @@
         <div class="section-title">
           <h2>Pertanyaan</h2>
           <p>Berikut ini beberapa pertanyaan yang sering muncul dan kami merangkumnya dalam kolom pertanyaan di bawah ini</p>
-          <p>Selamat Membaca</p>
+          <p>Selamat Membaca😉😉😉</p>
         </div>
 
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Apakah semua perawakan pendek disebut stunting? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                 <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  Stunting bagian dari perawakan pendek, disebabkan kondisi kesehatan atau nutrisi sub-optimal terutama kualitas dan kuantitas asupan makanan yang salah. Disebut perawakan pendek jika panjang badan atau tinggi badan menurut umur berada di bawah Zscore -2 WHO Growth Standard.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Tanda-tanda awal stunting dimulai dan sejak kapan? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  Usia 2-3 bulan, dimulai dari berat badan kurang atau menurun dan terus dibiarkan. Begitu berat badan turun, asupan energi tidak cukup. Pada anak yang beratnya di bawah 10 kg, 50 persen energi digunakan untuk perkembangan otak. Bila dia kekurangan energi, yang menjadi korban adalah otaknya.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Adakah makanan khusus untuk mencegah stunting? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  Makan asupan yang merangsang pertumbuhan tinggi, energi (karbohidrat dan lemak), harus cukup protein terutama hewani karena zat ini akan dipakai untuk tumbuh. Batita dianjurkan mengonsumsi 1,1 gram protein/kg/berat badan yang berkualitas tinggi (mengandung asam amino esensial lengkap) setiap hari, yang didapat dari sumber hewani seperti daging sapi, ayam, ikan, telur atau susu.
+
+                  Penelitian menunjukkan anak yang mendapat protein 15 persen dari total asupan kalori mempunyai tinggi badan lebih daripada mereka yang mendapatkan protein 7,5 persen.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Apakah stunting tergolong penyakit serius dan susah untuk disembuhkan? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                  Stunting bukan penyakit, tapi kondisi gagal tumbuh karena kurangnya asupan makanan dan terjadinya infeksi berulang dalam jangka waktu tertentu (kronis) yang terjadi pada periode emas atau 1.000 HPK seorang anak yaitu  sejak berada dalam kandungan hingga usia 2 tahun.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Apakah stunting hanya terjadi pada keluarga yang kurang mampu secara ekonomi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                  Mengingat faktor resiko/penyebab yang multidimensi (lihat penjelasan di no 5), maka stunting akibat masalah gizi kronis tidak hanya terkait dengan masalah ekonomi. Baik anak dari keluarga yang mampu maupun tidak mampu secara ekonomi dapat beresiko mengalami stunting. Sebagai contoh: pola asuh yang kurang optimal, kondisi lingkungan yang kurang bersih atau mengalami polusi, akses ke informasi gizi kesehatan yang tepat, dll dapat menjadi faktor resiko stunting yang tidak selalu dikarenakan masalah ekonomi keluarga..
                 </p>
               </div>
             </li>
@@ -427,7 +429,7 @@
               <div class="pic"><img src="img/doctors/aku2.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Adhiba Alya</h4>
-                <span>152011513025</span>
+                <span>152011513004</span>
                 <p>Universitas Airlangga</p>
                 <div class="social">
                   <a href="https://wa.me/6285851039374"><i class="ri-whatsApp-fill"></i></a>
