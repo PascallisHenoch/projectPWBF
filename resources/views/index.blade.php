@@ -61,14 +61,12 @@
           <li><a class="nav-link scrollto active" href="#">Home</a></li>
           <li><a class="nav-link scrollto" href="#departments">Informasi</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Galeri</a></li>
-          <li><a class="nav-link scrollto" href="#faq">Pertanyaan</a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
           <li><a class="nav-link scrollto" href="#doctors">Tentang Kami</a></li>
-          <li><a class="nav-link scrollto" href="/login">Orang Tua</a></li>
-          <li><a class="nav-link scrollto" href="/login">Kader Posyandu</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="/login" class="appointment-btn scrollto"><span class="d-none d-md-inline">Admin</span></a>
+      <a href="/login" class="appointment-btn scrollto"><span class="d-none d-md-inline">Registrasi</span></a>
     </div>
   </header><!-- End Header -->
 
@@ -337,7 +335,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Pertanyaan</h2>
+          <h2>FAQ</h2>
           <p>Berikut ini beberapa pertanyaan yang sering muncul dan kami merangkumnya dalam kolom pertanyaan di bawah ini</p>
           <p>Selamat Membaca😉😉😉</p>
         </div>
@@ -418,7 +416,7 @@
                 <div class="social">
                   <a href="https://wa.me/62895703300407"><i class="ri-whatsApp-fill"></i></a>
                   <a href="https://www.instagram.com/pascallishenoch_/"><i class="ri-instagram-fill"></i></a>
-                  <a href="https://twitter.com/pascallis27_"><i class="ri-twitter-fill"></i></a>
+                  <a href="https://www.facebook.com/pascallis.henoch.7"><i class="ri-facebook-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -434,7 +432,7 @@
                 <div class="social">
                   <a href="https://wa.me/6285851039374"><i class="ri-whatsApp-fill"></i></a>
                   <a href="https://www.instagram.com/adhibaalyaff_/"><i class="ri-instagram-fill"></i></a>
-                  <a href="https://twitter.com/"><i class="ri-twitter-fill"></i></a>
+                  <a href="https://www.facebook.com/adhibaaf.firdaus"><i class="ri-facebook-fill"></i></a>
                 </div>
               </div>
             </div>

@@ -16,7 +16,7 @@
 
   <style>
     .login-page {
-      background-image: url('img/login-background.jpg');
+      background-image: url('img/wallpaper.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
@@ -55,7 +55,7 @@
           <div class="row">
             <!-- /.col -->
             <div class="offset-md-8 col-4">
-              <button type="submit" class="btn btn-primary btn-block">LOGIN</button>
+              <button type="submit" href="/home" class="btn btn-primary btn-block ">LOGIN</button>
             </div>
             <!-- /.col -->
           </div>
