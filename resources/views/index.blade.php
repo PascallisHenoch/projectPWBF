@@ -60,13 +60,15 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#">Home</a></li>
           <li><a class="nav-link scrollto" href="#departments">Informasi</a></li>
+          <li><a class="nav-link scrollto" href="#services">Pengguna</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Galeri</a></li>
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
           <li><a class="nav-link scrollto" href="#doctors">Tentang Kami</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="/login" class="appointment-btn scrollto"><span class="d-none d-md-inline">Registrasi</span></a>
+      <a href="/login" class="appointment-btn scrollto"><span class="d-none d-md-inline">Orangtua</span></a>
+      <a href="/login" class="appointment-btn scrollto"><span class="d-none d-md-inline">Admin</span></a>
     </div>
   </header><!-- End Header -->
 
@@ -246,6 +248,47 @@
         </div>
       </div>
     </section><!-- End Counts Section -->
+
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Pengguna</h2>
+      <p>Aplikasi ini dapat digunakan oleh berbagai pihak, mulai dari kader posyandu untuk melakukan pencatatan pemeriksaan berat badan dan tinggi anak, puskesmas, desa dan dinas terkait untuk mendapatkan laporan tentang data stunting.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="icon-box">
+          <div class="icon"><i class="fas fa-user-edit"></i></div>
+          <h4><a href="">Kader Posyandu</a></h4>
+          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+        <div class="icon-box">
+          <div class="icon"><i class="fas fa-users"></i></div>
+          <h4><a href="">Orang Tua Balita</a></h4>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+        <div class="icon-box">
+          <div class="icon"><i class="fas fa-user-cog"></i></div>
+          <h4><a href="">Super Admin</a></h4>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Services Section -->
+
+
+
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
