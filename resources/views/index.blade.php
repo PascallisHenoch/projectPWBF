@@ -289,10 +289,11 @@
   <div class="container">
 
     <div class="section-title">
-      <h2>Pengguna</h2>
+      <h2>Pengguna Aplikasi</h2>
       <p>Aplikasi ini dapat digunakan oleh berbagai pihak, mulai dari kader posyandu untuk melakukan pencatatan pemeriksaan berat badan dan tinggi anak, puskesmas, desa dan dinas terkait untuk mendapatkan laporan tentang data stunting.</p>
     </div>
 
+<<<<<<< HEAD
     <div class="row"><a href="/login">
       <div class="col-lg-4 col-md-6 d-flex align-items-stretch"><a href="/login">
         <div class="icon-box"><a href="/login">
@@ -315,6 +316,30 @@
           <div class="icon"><i class="fas fa-user-cog"></i></div><a href="/login">
           <h4><a href="/login">Super Admin</a></h4>
           <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+=======
+    <div class="row">
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="icon-box">
+          <div class="icon"><i class="fas fa-user-edit"></i></div>
+          <h4><a href="">Kader Posyandu</a></h4>
+          <p>Pencatatan dan pelaporan penimbangan anak oleh kader mudah melalui aplikasi Android, WhatsApp atau Web.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+        <div class="icon-box">
+          <div class="icon"><i class="fas fa-users"></i></div>
+          <h4><a href="">Orang Tua Balita</a></h4>
+          <p>Cek status gizi anak dengan mudah. Dan pantau hasil penimbangan anak. Dan pelajari pencegahan stunting melalui aplikasi</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+        <div class="icon-box">
+          <div class="icon"><i class="fas fa-user-cog"></i></div>
+          <h4><a href="">Super Admin</a></h4>
+          <p>Monitoring, evaluasi dan kelola data penimbangan anak dari posyandu secara lebih efektif, real time dan paper less.</p>
+>>>>>>> 363718cb32b56d51a4438e3f9c8f9be61c556422
         </div>
       </div>
     </div>
