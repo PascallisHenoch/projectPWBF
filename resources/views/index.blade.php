@@ -1,5 +1,4 @@
 <!DOCTYPE >
-< lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -161,7 +160,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Departments Section ======= -->
-    <section id="service" class="departments">
+    <section id="departments" class="departments">
       <div class="container">
 
         <div class="section-title">
