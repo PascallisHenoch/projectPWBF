@@ -59,6 +59,7 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#about">Edukasi</a></li>
           <li><a class="nav-link scrollto" href="#departments">Informasi</a></li>
           <li><a class="nav-link scrollto" href="#services">Pengguna</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Galeri</a></li>
@@ -67,8 +68,7 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="/login" class="appointment-btn scrollto"><span class="d-none d-md-inline">Orangtua</span></a>
-      <a href="/login" class="appointment-btn scrollto"><span class="d-none d-md-inline">Admin</span></a>
+      <a href="/login" class="appointment-btn scrollto"><span class="d-none d-md-inline">Login</span></a>
     </div>
   </header><!-- End Header -->
 
@@ -77,7 +77,7 @@
     <div class="container">
       <h1>SELAMAT DATANG DI ASIPS</h1>
       <h2>Aplikasi Surveilans & Informasi Pencegahan Stunting</h2>
-      <a href="#departments" class="btn-get-started scrollto">Mulai</a>
+      <a href="#services" class="btn-get-started scrollto">Mulai</a>
     </div>
   </section><!-- End Hero -->
 
@@ -123,10 +123,45 @@
       </div>
     </section><!-- End Why Us Section -->
 
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
 
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+            <a href="https://www.youtube.com/watch?v=RoopQlMzLao&ab_channel=INAHEALTH" class="glightbox play-btn mb-4"></a>
+          </div>
+
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-atom"></i></div>
+              <h4 class="title"><a href="">Dine Pad</a></h4>
+              <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
 
     <!-- ======= Departments Section ======= -->
-    <section id="departments" class="departments">
+    <section id="service" class="departments">
       <div class="container">
 
         <div class="section-title">
@@ -258,27 +293,27 @@
       <p>Aplikasi ini dapat digunakan oleh berbagai pihak, mulai dari kader posyandu untuk melakukan pencatatan pemeriksaan berat badan dan tinggi anak, puskesmas, desa dan dinas terkait untuk mendapatkan laporan tentang data stunting.</p>
     </div>
 
-    <div class="row">
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="icon-box">
-          <div class="icon"><i class="fas fa-user-edit"></i></div>
-          <h4><a href="">Kader Posyandu</a></h4>
+    <div class="row"><a href="/login">
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch"><a href="/login">
+        <div class="icon-box"><a href="/login">
+          <div class="icon"><i class="fas fa-user-edit"></i></div><a href="/login">
+          <h4><a href="/login">Kader Posyandu</a></h4>
           <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-        <div class="icon-box">
-          <div class="icon"><i class="fas fa-users"></i></div>
-          <h4><a href="">Orang Tua Balita</a></h4>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"><a href="/login">
+        <div class="icon-box"><a href="/login">
+          <div class="icon"><i class="fas fa-users"></i></div><a href="/login">
+          <h4><a href="/login">Orang Tua Balita</a></h4>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-        <div class="icon-box">
-          <div class="icon"><i class="fas fa-user-cog"></i></div>
-          <h4><a href="">Super Admin</a></h4>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"><a href="/login">
+        <div class="icon-box"><a href="/login">
+          <div class="icon"><i class="fas fa-user-cog"></i></div><a href="/login">
+          <h4><a href="/login">Super Admin</a></h4>
           <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
         </div>
       </div>
