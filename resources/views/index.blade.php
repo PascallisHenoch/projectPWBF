@@ -254,7 +254,7 @@
   <div class="container">
 
     <div class="section-title">
-      <h2>Pengguna</h2>
+      <h2>Pengguna Aplikasi</h2>
       <p>Aplikasi ini dapat digunakan oleh berbagai pihak, mulai dari kader posyandu untuk melakukan pencatatan pemeriksaan berat badan dan tinggi anak, puskesmas, desa dan dinas terkait untuk mendapatkan laporan tentang data stunting.</p>
     </div>
 
@@ -263,7 +263,7 @@
         <div class="icon-box">
           <div class="icon"><i class="fas fa-user-edit"></i></div>
           <h4><a href="">Kader Posyandu</a></h4>
-          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          <p>Pencatatan dan pelaporan penimbangan anak oleh kader mudah melalui aplikasi Android, WhatsApp atau Web.</p>
         </div>
       </div>
 
@@ -271,7 +271,7 @@
         <div class="icon-box">
           <div class="icon"><i class="fas fa-users"></i></div>
           <h4><a href="">Orang Tua Balita</a></h4>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          <p>Cek status gizi anak dengan mudah. Dan pantau hasil penimbangan anak. Dan pelajari pencegahan stunting melalui aplikasi</p>
         </div>
       </div>
 
@@ -279,7 +279,7 @@
         <div class="icon-box">
           <div class="icon"><i class="fas fa-user-cog"></i></div>
           <h4><a href="">Super Admin</a></h4>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          <p>Monitoring, evaluasi dan kelola data penimbangan anak dari posyandu secara lebih efektif, real time dan paper less.</p>
         </div>
       </div>
     </div>
