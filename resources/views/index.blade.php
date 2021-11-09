@@ -492,7 +492,7 @@
                 <div class="social">
                   <a href="https://wa.me/62895703300407"><i class="ri-whatsApp-fill"></i></a>
                   <a href="https://www.instagram.com/pascallishenoch_/"><i class="ri-instagram-fill"></i></a>
-                  <a href="https://www.facebook.com/pascallis.henoch.7"><i class="ri-facebook-fill"></i></a>
+                  <a href="https://github.com/PascallisHenoch"><i class="ri-github-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -508,7 +508,7 @@
                 <div class="social">
                   <a href="https://wa.me/6285851039374"><i class="ri-whatsApp-fill"></i></a>
                   <a href="https://www.instagram.com/adhibaalyaff_/"><i class="ri-instagram-fill"></i></a>
-                  <a href="https://www.facebook.com/adhibaaf.firdaus"><i class="ri-facebook-fill"></i></a>
+                  <a href="https://github.com/adhibaAlya"><i class="ri-github-fill"></i></a>
                 </div>
               </div>
             </div>
