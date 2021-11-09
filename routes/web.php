@@ -8,6 +8,7 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\KecamatanController;
 use App\Http\Controllers\KelurahanController;
 use App\Http\Controllers\PosyanduController;
+use App\Http\Controllers\BalitaController;
 
 
 //==================================================
@@ -86,6 +87,14 @@ Route::get('/about', function () {
     Route::get('/posyandu/edit/{id}', [PosyanduController::class,'edit']);
     Route::post('/posyandu/update/{id}', [PosyanduController::class,'update']);
     Route::get('/posyandu/destroy/{id}', [PosyanduController::class,'destroy']);
+
+//Balita
+    Route::get('/balita', [BalitaController::class,'index']);
+    Route::get('/balita/create', [BalitaController::class,'create']);
+    Route::post('/balita/store', [BalitaController::class,'store']);
+    Route::get('/balita/edit/{id}', [BalitaController::class,'edit']);
+    Route::post('/balita/update/{id}', [BalitaController::class,'update']);
+    Route::get('/balita/destroy/{id}', [BalitaController::class,'destroy']);
 
 
 

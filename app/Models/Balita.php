@@ -9,10 +9,10 @@ class Balita extends Model
 {
     use HasFactory;
     protected $table = "balita_table";
-    protected $fillable = ['nama_balita', 'nik_ortu', 'nama_ortu', 'tgllahir_balita', 'jk_balita', 'status'];
+    protected $fillable = ['nama_balita', 'nik_ortu', 'nama_ortu', 'tgllahir_balita', 'jk_balita', 'status', 'id_posyandu'];
 
     public function posyandu() {
-        return $this->belongsTo(Posyandu::class, 'id', 'id_posyandu');
+        return $this->belongsTo(Posyandu::class, 'id_posyandu', 'id');
     }
 
     public function history_posyandu() {

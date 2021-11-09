@@ -3,7 +3,7 @@
 @section('container')
     <h1></h1>
     <article class="my-4">
-        <img src="img/{{ $image1 }}" alt="{{ $image1 }}">
+        {{-- <img src="img/{{ $image1 }}" alt="{{ $image1 }}"> --}}
         @foreach ($posts as $post)
 
         <article class="mb-5 border-buttom pb-3">

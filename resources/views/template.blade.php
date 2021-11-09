@@ -110,7 +110,7 @@
 
             <li class="nav-header">TRANSAKSI</li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="/balita" class="nav-link">
                 <i class="nav-icon fas fa-child"></i>
                 <p>
                     Pendaftaran Balita
