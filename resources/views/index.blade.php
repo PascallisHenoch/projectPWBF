@@ -42,8 +42,9 @@
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <a>PWBF Kelompok 4 || Universitas Airlangga</a>
+        <i class="bi bi-github"></i> <a href="https://github.com/PascallisHenoch/projectPWBF">PWBF Kelompok 4 || Universitas Airlangga</a>
       </div>
+
     </div>
   </div>
 
