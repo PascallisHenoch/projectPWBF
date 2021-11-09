@@ -296,7 +296,7 @@
         <div class="icon-box"><a href="/login">
           <div class="icon"><i class="fas fa-user-edit"></i></div><a href="/login">
           <h4><a href="/login">Kader Posyandu</a></h4>
-          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          <p>Pencatatan dan pelaporan penimbangan anak oleh kader mudah melalui aplikasi Android, WhatsApp atau Web.</p>
         </div>
       </div>
 
@@ -304,7 +304,7 @@
         <div class="icon-box"><a href="/login">
           <div class="icon"><i class="fas fa-users"></i></div><a href="/login">
           <h4><a href="/login">Orang Tua Balita</a></h4>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          <p>Cek status gizi anak dengan mudah. Dan pantau hasil penimbangan anak. Dan pelajari pencegahan stunting melalui aplikasi</p>
         </div>
       </div>
 
@@ -312,7 +312,7 @@
         <div class="icon-box"><a href="/login">
           <div class="icon"><i class="fas fa-user-cog"></i></div><a href="/login">
           <h4><a href="/login">Super Admin</a></h4>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          <p>Monitoring, evaluasi dan kelola data penimbangan anak dari posyandu secara lebih efektif, real time dan paper less.</p>
         </div>
       </div>
     </div>
