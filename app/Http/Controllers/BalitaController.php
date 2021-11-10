@@ -16,7 +16,7 @@ class BalitaController extends Controller
     public function index()
     {
 
-        $balita = Balita::with('posyandu')->get();
+        $balita = Balita::with('posyandu.kelurahan.kecamatan')->get();
  
     	return view('balita/index', [
             'title' => 'Daftar Balita',

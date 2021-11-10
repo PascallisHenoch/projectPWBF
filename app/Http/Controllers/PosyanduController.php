@@ -17,7 +17,7 @@ class PosyanduController extends Controller
      */
     public function index()
     {
-        $posyandu = Posyandu::with('kelurahan')->get();
+        $posyandu = Posyandu::with('kelurahan.kecamatan')->get();
  
     	return view('posyandu/index', [
             'title' => 'Daftar posyandu',
