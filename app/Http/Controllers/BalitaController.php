@@ -15,7 +15,8 @@ class BalitaController extends Controller
      */
     public function index()
     {
-        $balita = Balita::all();
+
+        $balita = Balita::with('posyandu')->get();
  
     	return view('balita/index', [
             'title' => 'Daftar Balita',

@@ -15,7 +15,7 @@ class KelurahanController extends Controller
      */
     public function index()
     {
-        $kelurahan = Kelurahan::all();
+        $kelurahan = Kelurahan::with('kecamatan')->get();
  
     	return view('kelurahan/index', [
             'title' => 'Daftar Kelurahan',
