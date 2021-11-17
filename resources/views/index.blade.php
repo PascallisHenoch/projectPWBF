@@ -68,6 +68,7 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
+      <a href="/registrasi" class="appointment-btn scrollto"><span class="d-none d-md-inline">Registrasi</span></a>
       <a href="/login" class="appointment-btn scrollto"><span class="d-none d-md-inline">Login</span></a>
     </div>
   </header><!-- End Header -->

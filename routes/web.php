@@ -17,6 +17,13 @@ use App\Http\Controllers\BalitaController;
         return view('index');
     });
 
+    Route::get('/registrasi', function () {
+        return view('registrasi', [
+            "title" => "Registrasi"
+        ]);
+    });
+    Route::post('/login', [AuthController::class,'registrasi']);
+
     Route::get('/login', function () {
         return view('login', [
             "title" => "Login"
