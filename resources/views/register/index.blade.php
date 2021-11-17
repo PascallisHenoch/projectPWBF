@@ -23,17 +23,22 @@
       background-color: white;
       background-size: cover;
     }
+    .register {
+        margin: 60px auto;
+        width: 500px;
+        padding: 10px;
+    }
   </style>
 </head>
 <body class="hold-transition login-page">
-  <div class="login-box">
+  <div class="register">
     <!-- /.login-logo -->
     <div class="card card-outline card-primary">
       <div class="card-header text-center">
-        <a href="/" class="h2"><b>ASIPS</b></a>
+        <a href="/" class="h2"><b>REGISTER</b></a>
       </div>
       <div class="card-body">
-        <p class="login-box-msg">REGISTER</p>
+        <p class="login-box-msg">Isi Dengan Benar dan Cermat</p>
 
         <form action="/register" method="post">
           @csrf

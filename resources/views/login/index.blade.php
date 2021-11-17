@@ -23,17 +23,22 @@
       background-color: white;
       background-size: cover;
     }
+    .login {
+        margin: 150px auto;
+        width: 400px;
+        padding: 10px;
+    }
   </style>
 </head>
 <body class="hold-transition login-page">
-  <div class="login-box">
+  <div class="login">
     <!-- /.login-logo -->
     <div class="card card-outline card-primary">
       <div class="card-header text-center">
-        <a href="/" class="h2"><b>ASIPS</b></a>
+        <a href="/" class="h2"><b>LOGIN</b></a>
       </div>
       <div class="card-body">
-        <p class="login-box-msg">LOGIN</p>
+        
 
         <form action="/login" method="post">
           @csrf
