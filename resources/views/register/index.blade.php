@@ -86,6 +86,7 @@
         </form>
         <p></p>
         <small class="d-block text-center mt-3">Sudah Mempunyai akun? <a href="/login">Login Now!</a></small>
+        <small class="d-block text-right mt-3"><a href="/">Kembali</a></small>
         
 
       </div>

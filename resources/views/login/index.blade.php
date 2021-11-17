@@ -64,7 +64,7 @@
         </form>
         <p></p>
         <small class="d-block text-center">Belum mempunyai akun? <a href="/register">Register Now!</a></small>
-        
+        <small class="d-block text-right mt-3"><a href="/">Kembali</a></small>
 
       </div>
       <!-- /.card-body -->

@@ -65,10 +65,10 @@
           <li><a class="nav-link scrollto" href="#gallery">Galeri</a></li>
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
           <li><a class="nav-link scrollto" href="#doctors">Tentang Kami</a></li>
+          <li><a class="nav-link scrollto" href="/register">Registrasi</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="/register" class="appointment-btn scrollto"><span class="d-none d-md-inline">Registrasi</span></a>
       <a href="/login" class="appointment-btn scrollto"><span class="d-none d-md-inline">Login</span></a>
     </div>
   </header><!-- End Header -->
