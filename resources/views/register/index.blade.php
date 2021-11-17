@@ -24,7 +24,7 @@
       background-size: cover;
     }
     .register {
-        margin: 60px auto;
+        margin: 50px auto;
         width: 500px;
         padding: 10px;
     }
@@ -84,7 +84,7 @@
           </div>
           <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">REGISTER</button>
         </form>
-
+        <p></p>
         <small class="d-block text-center mt-3">Sudah Mempunyai akun? <a href="/login">Login Now!</a></small>
         
 
