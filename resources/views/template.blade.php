@@ -50,17 +50,6 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- Sidebar user (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-      
-        <div class="image">
-          <img src="{{ asset('admin/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Kelompok 4</a>
-        </div>
-      </div>
-
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -122,24 +111,6 @@
                 <i class="nav-icon fas fa-history"></i>
                 <p>
                     History Posyandu
-                </p>
-                </a>
-            </li>
-
-            <li class="nav-header">INFORMASI</li>
-            <li class="nav-item">
-                <a href="/informasi" class="nav-link">
-                <i class="nav-icon fas fa-book"></i>
-                <p>
-                    Informasi
-                </p>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="/about" class="nav-link">
-                <i class="nav-icon fas fa-info-circle"></i>
-                <p>
-                    Tentang Kami
                 </p>
                 </a>
             </li>

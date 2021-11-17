@@ -11,19 +11,26 @@
             </div>
         @endif
         
+        @if(session( )->has('loginError'))
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                {{ session('loginError') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+
         <main class="form-signin">
             <h1 class="h3 mb-3 fw-normal text-center">HALAMAN LOGIN</h1>
             <form action="/login" method="post">
                 @csrf
                 <div class="form-floating">
-                    <input type="text" name="username" class="form-control @error('username') is-invalid @enderror" id="username" placeholder="Username" autofocus required>
-                    <label for="username">Username</label>
-                    @error('username')
-                      <div class="invalid-feedback">
-                       {{ $message }}
-                      </div>
-                    @enderror
-                  </div>
+                  <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" autofocus required value={{ old('email') }}>
+                  <label for="email">Email address</label>
+                  @error('email')
+                    <div class="invalid-feedback">
+                     {{ $message }}
+                    </div>
+                  @enderror
+                </div>
                   <div class="form-floating">
                     <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password" required>
                     <label for="password">Password</label>
