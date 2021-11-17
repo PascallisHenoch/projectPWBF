@@ -11,6 +11,7 @@ use App\Http\Controllers\PosyanduController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\KecamatanController;
 use App\Http\Controllers\KelurahanController;
+use App\Http\Controllers\History_PosyanduController;
 
 
 //==================================================
@@ -108,6 +109,14 @@ Route::get('/about', function () {
     Route::get('/balita/edit/{id}', [BalitaController::class,'edit']);
     Route::post('/balita/update/{id}', [BalitaController::class,'update']);
     Route::get('/balita/destroy/{id}', [BalitaController::class,'destroy']);
+
+//History Posyandu
+    Route::get('/history_posyandu', [History_PosyanduController::class,'index']);
+    Route::get('/history_posyandu/create', [History_PosyanduController::class,'create']);
+    Route::post('/history_posyandu/store', [History_PosyanduController::class,'store']);
+    Route::get('/history_posyandu/edit/{id}', [History_PosyanduController::class,'edit']);
+    Route::post('/history_posyandu/update/{id}', [History_PosyanduController::class,'update']);
+    Route::get('/history_posyandu/destroy/{id}', [History_PosyanduController::class,'destroy']);
 
 
 

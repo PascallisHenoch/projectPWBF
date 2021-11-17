@@ -64,14 +64,14 @@
                 </p>
                 </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
               <a href="#" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
                   User
               </p>
               </a>
-            </li>
+            </li> --}}
             <li class="nav-item">
                 <a href="/kecamatan" class="nav-link">
                 <i class="nav-icon fas fa-map"></i>
@@ -107,7 +107,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="/history_posyandu" class="nav-link">
                 <i class="nav-icon fas fa-history"></i>
                 <p>
                     History Posyandu
