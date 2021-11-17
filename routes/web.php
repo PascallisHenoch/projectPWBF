@@ -2,13 +2,15 @@
 
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\BalitaController;
+use App\Http\Controllers\PosyanduController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\KecamatanController;
 use App\Http\Controllers\KelurahanController;
-use App\Http\Controllers\PosyanduController;
-use App\Http\Controllers\BalitaController;
 
 
 //==================================================
@@ -17,18 +19,22 @@ use App\Http\Controllers\BalitaController;
         return view('index');
     });
 
-    Route::get('/registrasi', function () {
-        return view('registrasi', [
-            "title" => "Registrasi"
-        ]);
-    });
-    Route::post('/login', [AuthController::class,'registrasi']);
+    // Route::get('/registrasi', function () {
+    //     return view('registrasi', [
+    //         "title" => "Registrasi"
+    //     ]);
+    // });
 
-    Route::get('/login', function () {
-        return view('login', [
-            "title" => "Login"
-        ]);
-    });
+    // Route::get('/login', function () {
+    //     return view('login', [
+    //         "title" => "Login"
+    //     ]);
+    // });
+    
+    Route::get('/login', [LoginController::class,'index']);
+    Route::get('/register', [RegisterController::class,'index']);
+    Route::post('/register', [RegisterController::class,'store']);
+
     Route::post('/login', [AuthController::class,'login']);
 
 
