@@ -35,7 +35,7 @@
     <!-- /.login-logo -->
     <div class="card card-outline card-primary">
       <div class="card-header text-center">
-        <a href="/" class="h2"><b>LOGIN</b></a>
+        <a href="/login" class="h2"><b>LOGIN</b></a>
       </div>
       <div class="card-body">
         

@@ -35,7 +35,7 @@
     <!-- /.login-logo -->
     <div class="card card-outline card-primary">
       <div class="card-header text-center">
-        <a href="/" class="h2"><b>REGISTER</b></a>
+        <a href="/register" class="h2"><b>REGISTER</b></a>
       </div>
       <div class="card-body">
         <p class="login-box-msg">Isi Dengan Benar dan Cermat</p>
