@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ASIPS | Registrasi </title>
+  <title>ASIPS | Login </title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -33,35 +33,51 @@
         <a href="/" class="h2"><b>ASIPS</b></a>
       </div>
       <div class="card-body">
-        <p class="login-box-msg">REGISTRASI</p>
+        <p class="login-box-msg">REGISTER</p>
 
-        <form action="/registrasi" method="post">
-          <div class="input-group mb-3">
-            <input type="email" class="form-control" placeholder="Email">
-            <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-envelope"></span>
+        <form action="/register" method="post">
+          @csrf
+          <div class="form-floating">
+            <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Name" required value={{ old('name') }}>
+            <label for="name">Name</label>
+            @error('name')
+              <div class="invalid-feedback">
+               {{ $message }}
               </div>
-            </div>
+            @enderror
           </div>
-          <div class="input-group mb-3">
-            <input type="password" class="form-control" placeholder="Password">
-            <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-lock"></span>
+          <div class="form-floating">
+            <input type="text" name="username" class="form-control @error('username') is-invalid @enderror" id="username" placeholder="Username" required value={{ old('username') }}>
+            <label for="username">Username</label>
+            @error('username')
+              <div class="invalid-feedback">
+               {{ $message }}
               </div>
-            </div>
+            @enderror
           </div>
-          <small class="d-block text-center">Sudah mempunyai akun? <a href="/login">Login</a></small>
-          <p></p>
-          <div class="row">
-            <!-- /.col -->
-            <div class="offset-md-8 col-4">
-              <button type="submit" href="/home" class="btn btn-primary btn-block ">SUBMIT</button>
-            </div>
-            <!-- /.col -->
+          <div class="form-floating">
+            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" required value={{ old('email') }}>
+            <label for="email">Email address</label>
+            @error('email')
+              <div class="invalid-feedback">
+               {{ $message }}
+              </div>
+            @enderror
           </div>
+          <div class="form-floating">
+            <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password" required>
+            <label for="password">Password</label>
+            @error('password')
+              <div class="invalid-feedback">
+               {{ $message }}
+              </div>
+            @enderror
+          </div>
+          <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">REGISTER</button>
         </form>
+
+        <small class="d-block text-center mt-3">Sudah Mempunyai akun? <a href="/login">Login Now!</a></small>
+        
 
       </div>
       <!-- /.card-body -->
@@ -80,3 +96,57 @@
 <script src="{{ asset('admin/dist/js/demo.js') }}"></script>
 </body>
 </html>
+
+@extends('layouts.main')
+
+@section('container')
+<div class="row justify-content-center">
+    <div class="col-lg-5">
+        <main class="form-registration">
+            <h1 class="h3 mb-3 fw-normal text-center">HALAMAN REGISTER</h1>
+            <form action="/register" method="post">
+              @csrf
+              <div class="form-floating">
+                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Name" required value={{ old('name') }}>
+                <label for="name">Name</label>
+                @error('name')
+                  <div class="invalid-feedback">
+                   {{ $message }}
+                  </div>
+                @enderror
+              </div>
+              <div class="form-floating">
+                <input type="text" name="username" class="form-control @error('username') is-invalid @enderror" id="username" placeholder="Username" required value={{ old('username') }}>
+                <label for="username">Username</label>
+                @error('username')
+                  <div class="invalid-feedback">
+                   {{ $message }}
+                  </div>
+                @enderror
+              </div>
+              <div class="form-floating">
+                <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" required value={{ old('email') }}>
+                <label for="email">Email address</label>
+                @error('email')
+                  <div class="invalid-feedback">
+                   {{ $message }}
+                  </div>
+                @enderror
+              </div>
+              <div class="form-floating">
+                <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password" required>
+                <label for="password">Password</label>
+                @error('password')
+                  <div class="invalid-feedback">
+                   {{ $message }}
+                  </div>
+                @enderror
+              </div>
+              <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">REGISTER</button>
+            </form>
+            <small class="d-block text-center mt-3">Sudah Mempunyai akun? <a href="/login">Login Now!</a></small>
+          </main>
+    </div>
+</div>
+
+@endsection

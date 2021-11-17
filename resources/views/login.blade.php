@@ -1,82 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ASIPS | Login </title>
+@extends('layouts.main')
 
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ asset('admin/plugins/fontawesome-free/css/all.min.css') }}">
-  <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="{{ asset('admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="{{ asset('admin/dist/css/adminlte.min.css') }}">
+@section('container')
+<div class="row justify-content-center">
+    <div class="col-md-5">
 
-  <style>
-    .login-page {
-      background-image: url('img/kids.png');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      background-color: white;
-      background-size: cover;
-    }
-  </style>
-</head>
-<body class="hold-transition login-page">
-  <div class="login-box">
-    <!-- /.login-logo -->
-    <div class="card card-outline card-primary">
-      <div class="card-header text-center">
-        <a href="/" class="h2"><b>ASIPS</b></a>
-      </div>
-      <div class="card-body">
-        <p class="login-box-msg">LOGIN</p>
-
-        <form action="/login" method="post">
-          <div class="input-group mb-3">
-            <input type="email" class="form-control" placeholder="Email">
-            <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-envelope"></span>
-              </div>
+        @if(session( )->has('success'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-          </div>
-          <div class="input-group mb-3">
-            <input type="password" class="form-control" placeholder="Password">
-            <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-lock"></span>
-              </div>
+        @endif
+        
+        @if(session( )->has('loginError'))
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                {{ session('loginError') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-          </div>
-          <small class="d-block text-center">Belum mempunyai akun? <a href="/registrasi">Registrasi</a></small>
-          <p></p>
-          <div class="row">
-            <!-- /.col -->
-            <div class="offset-md-8 col-4">
-              <button type="submit" href="/home" class="btn btn-primary btn-block ">LOGIN</button>
-            </div>
-            <!-- /.col -->
-          </div>
-        </form>
+        @endif
 
-      </div>
-      <!-- /.card-body -->
+        <main class="form-signin">
+            <h1 class="h3 mb-3 fw-normal text-center">HALAMAN LOGIN</h1>
+            <form action="/login" method="post">
+                @csrf
+                <div class="form-floating">
+                  <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" autofocus required value={{ old('email') }}>
+                  <label for="email">Email address</label>
+                  @error('email')
+                    <div class="invalid-feedback">
+                     {{ $message }}
+                    </div>
+                  @enderror
+                </div>
+                  <div class="form-floating">
+                    <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password" required>
+                    <label for="password">Password</label>
+                    @error('password')
+                      <div class="invalid-feedback">
+                       {{ $message }}
+                      </div>
+                    @enderror
+                  </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">LOGIN</button>
+            </form>
+            <small class="d-block text-center mt-3">Not register? <a href="/register">Register Now!</a></small>
+          </main>
     </div>
-    <!-- /.card -->
-  </div>
-<!-- /.login-box -->
+</div>
 
-<!-- jQuery -->
-<script src="{{ asset('admin/plugins/jquery/jquery.min.js') }}"></script>
-<!-- Bootstrap 4 -->
-<script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<!-- AdminLTE App -->
-<script src="{{ asset('admin/dist/js/adminlte.min.js') }}"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="{{ asset('admin/dist/js/demo.js') }}"></script>
-</body>
-</html>
+@endsection
