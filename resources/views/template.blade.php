@@ -33,7 +33,7 @@
         <!-- Messages Dropdown Menu -->
         <li class="nav-item dropdown">
             <a class="nav-link" href="/" title="Logout">
-                <i class="nav-icon fas fa-sign-out-alt"></i>
+                Logout  <i class="nav-icon fas fa-sign-out-alt"></i>
             </a>
         </li>
     </ul>
