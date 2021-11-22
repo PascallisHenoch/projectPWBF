@@ -16,7 +16,7 @@
 
   <style>
     .login-page {
-      background-image: url('img/kids.png');
+      background-image: url('img/wallpaper.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
