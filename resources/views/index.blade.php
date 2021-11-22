@@ -62,6 +62,7 @@
           <li><a class="nav-link scrollto" href="#about">Edukasi</a></li>
           <li><a class="nav-link scrollto" href="#departments">Informasi</a></li>
           <li><a class="nav-link scrollto" href="#services">Pengguna</a></li>
+          <li><a class="nav-link scrollto" href="#appointment">Posyandu</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Galeri</a></li>
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
           <li><a class="nav-link scrollto" href="#doctors">Tentang Kami</a></li>
@@ -78,7 +79,7 @@
     <div class="container">
       <h1>SELAMAT DATANG DI ASIPS</h1>
       <h2>Aplikasi Surveilans & Informasi Pencegahan Stunting</h2>
-      <a href="#services" class="btn-get-started scrollto">Mulai</a>
+      <a href="#appointment" class="btn-get-started scrollto">Mulai</a>
     </div>
   </section><!-- End Hero -->
 
@@ -227,12 +228,11 @@
     <section id="counts" class="counts">
       <div class="container">
 
-
         <div class="section-title">
-          <h4>Sebaran Data</h4>
+          <h2>Sebaran Data</h2>
           <p>Informasi mengenai jumlah sebaran data yang ada di Indonesia</p>
-          <br>
         </div>
+       <p></p>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
@@ -270,27 +270,27 @@
       <h2>Pengguna Aplikasi</h2>
       <p>Aplikasi ini dapat digunakan oleh berbagai pihak, mulai dari kader posyandu untuk melakukan pencatatan pemeriksaan berat badan dan tinggi anak, puskesmas, desa dan dinas terkait untuk mendapatkan laporan tentang data stunting.</p>
     </div>
-    <div class="row"><a href="/login">
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch"><a href="/login">
-        <div class="icon-box"><a href="/login">
-          <div class="icon"><i class="fas fa-user-edit"></i></div><a href="/login">
-          <h4><a href="/login">Kader Posyandu</a></h4>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="icon-box">
+          <div class="icon"><i class="fas fa-user-edit"></i></div>
+          <h4>Kader Posyandu</a></h4>
           <p>Pencatatan dan pelaporan penimbangan anak oleh kader mudah melalui aplikasi Android, WhatsApp atau Web.</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"><a href="/login">
-        <div class="icon-box"><a href="/login">
-          <div class="icon"><i class="fas fa-users"></i></div><a href="/login">
-          <h4><a href="/login">Orang Tua Balita</a></h4>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+        <div class="icon-box">
+          <div class="icon"><i class="fas fa-users"></i></div>
+          <h4>Orang Tua Balita</a></h4>
           <p>Cek status gizi anak dengan mudah. Dan pantau hasil penimbangan anak. Dan pelajari pencegahan stunting melalui aplikasi</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"><a href="/login">
-        <div class="icon-box"><a href="/login">
-          <div class="icon"><i class="fas fa-user-cog"></i></div><a href="/login">
-          <h4><a href="/login">Super Admin</a></h4>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+        <div class="icon-box">
+          <div class="icon"><i class="fas fa-user-cog"></i></div>
+          <h4>Super Admin</a></h4>
           <p>Monitoring, evaluasi dan kelola data penimbangan anak dari posyandu secara lebih efektif, real time dan paper less.</p>
         </div>
       </div>
@@ -299,7 +299,32 @@
   </div>
 </section><!-- End Services Section -->
 
+<!-- ======= Appointment Section ======= -->
+<section id="appointment" class="appointment section-bg">
+  <div class="container">
 
+    <div class="section-title">
+      <h2>History Posyandu</h2>
+      <p>Masukkan NIK orang tua anak pada kolom di bawah ini dan klik cari untuk mengetahui informasi history posyandu pada anak</p>
+    </div>
+
+    <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+      <div class="row">
+        <div class="col-md-4 form-group mt-3 mt-md-0">
+        </div>
+        <div class="col-md-4 form-group mt-3 mt-md-0">
+          <input type="nik" class="form-control" name="nik" id="nik" placeholder="" data-rule="nik" data-msg="NIK salah">
+          <div class="validate"></div>
+        </div>
+        <div class="col-md-4 form-group mt-3 mt-md-0">
+        </div>
+      </div>
+      <p></p>
+      <div class="text-center"><button type="submit">Cari</button></div>
+    </form>
+
+  </div>
+</section><!-- End Appointment Section -->
 
 
     <!-- ======= Gallery Section ======= -->
