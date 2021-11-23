@@ -65,7 +65,25 @@ class History_PosyanduController extends Controller
      */
     public function show($id)
     {
-        //
+        $history = History_Posyandu::with('balita')->whereHas('Balita', function($q) use($id) {
+            $q->where('nik_ortu', $id);
+        })->get();
+        $data = array();
+        foreach($history as $k => $v) {
+            $data[$k] = array(
+                $k + 1,
+                $v->balita->nama_balita,
+                date("d-m-Y", strtotime($v->tgl_posyandu)),
+                $v->berat_badan_balita,
+                $v->tinggi_badan_balita
+            );
+        }
+
+        $output = array(
+            "data" => $data
+        );
+
+        echo json_encode($output);
     }
 
     /**

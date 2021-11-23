@@ -25,6 +25,15 @@
   <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{ asset('admin/plugins/fontawesome-free/css/all.min.css') }}">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('admin/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{ asset('admin/dist/css/adminlte.min.css') }}">
+
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -308,20 +317,33 @@
       <p>Masukkan NIK orang tua anak pada kolom di bawah ini dan klik cari untuk mengetahui informasi history posyandu pada anak</p>
     </div>
 
-    <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
-      <div class="row">
-        <div class="col-md-4 form-group mt-3 mt-md-0">
-        </div>
-        <div class="col-md-4 form-group mt-3 mt-md-0">
-          <input type="nik" class="form-control" name="nik" id="nik" placeholder="" data-rule="nik" data-msg="NIK salah">
-          <div class="validate"></div>
-        </div>
-        <div class="col-md-4 form-group mt-3 mt-md-0">
-        </div>
+    <div class="row">
+      <div class="col-md-4 form-group mt-3 mt-md-0">
       </div>
-      <p></p>
-      <div class="text-center"><button type="submit">Cari</button></div>
-    </form>
+      <div class="col-md-4 form-group mt-3 mt-md-0">
+        <input type="text" class="form-control" name="nik" id="nik" placeholder="" data-rule="nik" data-msg="NIK salah">
+        <div class="validate"></div>
+      </div>
+      <div class="col-md-4 form-group mt-3 mt-md-0">
+      </div>
+    </div>
+    <p></p>
+    <div class="text-center"><button class="btn btn-success" onclick="search()">Cari</button></div>
+
+    <table id="example1" class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th style="width: 1%;">No</th>
+          <th>Nama Balita</th>
+          <th>Tanggal Posyandu</th>
+          <th>Berat Badan</th>
+          <th>Tinggi Badan</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
 
   </div>
 </section><!-- End Appointment Section -->
@@ -562,6 +584,47 @@
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
 
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <!-- DataTables  & Plugins -->
+  <script src="{{ asset('admin/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+  <script src="{{ asset('admin/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+  <script src="{{ asset('admin/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+  <script src="{{ asset('admin/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+  <script src="{{ asset('admin/plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
+  <script src="{{ asset('admin/plugins/datatables-buttons/js/buttons.bootstrap4.min.js') }}"></script>
+  <script src="{{ asset('admin/plugins/jszip/jszip.min.js') }}"></script>
+  <script src="{{ asset('admin/plugins/pdfmake/pdfmake.min.js') }}"></script>
+  <script src="{{ asset('admin/plugins/pdfmake/vfs_fonts.js') }}"></script>
+  <script src="{{ asset('admin/plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
+  <script src="{{ asset('admin/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
+  <script src="{{ asset('admin/plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
+  <!-- AdminLTE App -->
+  <script src="{{ asset('admin/dist/js/adminlte.min.js') }}"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="{{ asset('admin/dist/js/demo.js') }}"></script>
+
+  <script>
+		$(function () {
+			$('#example1').DataTable({
+        searching: false,
+        ajax: {
+          url: "/history_posyandu/show/0",
+          type: "GET"
+        },
+      });
+		});
+
+    function search() {
+      var nik = "0";
+      if($("#nik").val() != "") {
+        nik = $("#nik").val();
+      }
+      $('#example1').DataTable().ajax.url("/history_posyandu/show/" + nik).load();
+    }
+  </script>
 </body>
 
 </>

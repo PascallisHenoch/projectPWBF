@@ -114,6 +114,7 @@ Route::get('/about', function () {
     Route::get('/history_posyandu', [History_PosyanduController::class,'index']);
     Route::get('/history_posyandu/create', [History_PosyanduController::class,'create']);
     Route::post('/history_posyandu/store', [History_PosyanduController::class,'store']);
+    Route::get('/history_posyandu/show/{id}', [History_PosyanduController::class,'show']);
     Route::get('/history_posyandu/edit/{id}', [History_PosyanduController::class,'edit']);
     Route::post('/history_posyandu/update/{id}', [History_PosyanduController::class,'update']);
     Route::get('/history_posyandu/destroy/{id}', [History_PosyanduController::class,'destroy']);
