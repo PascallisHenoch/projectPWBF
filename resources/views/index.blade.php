@@ -321,7 +321,7 @@
       <div class="col-md-4 form-group mt-3 mt-md-0">
       </div>
       <div class="col-md-4 form-group mt-3 mt-md-0">
-        <input type="text" class="form-control" name="nik" id="nik" placeholder="" data-rule="nik" data-msg="NIK salah">
+        <input type="text" class="form-control" name="nik" id="nik" placeholder="Cari NIK" data-rule="nik" data-msg="NIK salah">
         <div class="validate"></div>
       </div>
       <div class="col-md-4 form-group mt-3 mt-md-0">
