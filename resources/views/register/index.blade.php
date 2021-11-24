@@ -38,7 +38,7 @@
         <a href="/register" class="h2"><b>REGISTER</b></a>
       </div>
       <div class="card-body">
-        <p class="login-box-msg">Isi Dengan Benar dan Cermat</p>
+        <p class="login-box-msg">Isi Data dengan Benar</p>
 
         <form action="/register" method="post">
           @csrf
@@ -85,8 +85,8 @@
           <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">REGISTER</button>
         </form>
         <p></p>
-        <small class="d-block text-center mt-3">Sudah Mempunyai akun? <a href="/login">Login Now!</a></small>
-        <small class="d-block text-right mt-3"><a href="/">Kembali</a></small>
+        <small class="d-block text-center mt-3">Sudah Mempunyai akun? <a href="/login"><b>Login Now!</b></a></small>
+        <small class="d-block text-right mt-3"><a href="/"><b>Kembali</b></a></small>
         
 
       </div>

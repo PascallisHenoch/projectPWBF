@@ -63,8 +63,8 @@
             <button type="submit " href="/home" class="w-100 btn btn-lg btn-primary mt-3">LOGIN</button>
         </form>
         <p></p>
-        <small class="d-block text-center">Belum mempunyai akun? <a href="/register">Register Now!</a></small>
-        <small class="d-block text-right mt-3"><a href="/">Kembali</a></small>
+        <small class="d-block text-center">Belum mempunyai akun? <a href="/register"><b>Register Now!</b></a></small>
+        <small class="d-block text-right mt-3"><a href="/"><b>Kembali</b></a></small>
 
       </div>
       <!-- /.card-body -->
