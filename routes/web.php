@@ -13,6 +13,13 @@ use App\Http\Controllers\KecamatanController;
 use App\Http\Controllers\KelurahanController;
 use App\Http\Controllers\History_PosyanduController;
 
+//==================================================
+//======================HOME=======================
+    Route::get('/login', [LoginController::class,'index'])->name('login');
+    Route::post('/login', [LoginController::class,'authenticate']);
+    Route::post('/logout', [LoginController::class,'logout']);
+    Route::get('/register', [RegisterController::class,'index']);
+    Route::post('/register', [RegisterController::class,'store']);
 
 //==================================================
 //======================LOGIN=======================
@@ -20,66 +27,25 @@ use App\Http\Controllers\History_PosyanduController;
         return view('index');
     });
 
-    // Route::get('/registrasi', function () {
-    //     return view('registrasi', [
-    //         "title" => "Registrasi"
-    //     ]);
-    // });
-
-    // Route::get('/login', function () {
-    //     return view('login', [
-    //         "title" => "Login"
-    //     ]);
-    // });
-    
-    Route::get('/login', [LoginController::class,'index']);
-    Route::post('/login', [LoginController::class,'authenticate']);
-    Route::get('/register', [RegisterController::class,'index']);
-    Route::post('/register', [RegisterController::class,'store']);
-
-
-
 //==================================================
-//======================HOME========================
-    Route::get('/home', function () {
-        return view('home', [
-            "title" => "Home",
-            "image2" => "LOGO ASIPS.png"
-        ]);
-    });
-
-
-//==================================================
-//===================INFORMASI======================
-Route::get('/informasi', [PostController::class,'index']);
-Route::get('posts/{post:slug}', [PostController::class, 'show']);
-
-
-//==================================================
-//=====================ABOUT========================
-Route::get('/about', function () {
-    return view('about', [
-        "title" => "About",
-        "nama1" => "Pascallis Henoch",
-        "nim1" => "152011513025",
-        "paskal1" => "paskal1.jpeg",
-        "nama2" => "Adhiba Alya",
-        "nim2" => "152011513004",
-        "dhiba1" => "dhiba1.png",
+//======================DASHBOARD========================
+Route::get('/home', function () {
+    return view('home', [
+        "title" => "Home",
+        "image2" => "LOGO ASIPS.png"
     ]);
-});
-
+})->middleware('auth');
 
 //==================================================
 //======================CRUD========================
 
 //Role
-    Route::get('/role', [RoleController::class,'index']);
+    Route::get('/role', [RoleController::class,'index'])->middleware('auth');
     Route::get('/role/edit/{id}', [RoleController::class,'edit']);
     Route::post('/role/update/{id}', [RoleController::class,'update']);
 
 //Kecamatan
-    Route::get('/kecamatan', [KecamatanController::class,'index']);
+    Route::get('/kecamatan', [KecamatanController::class,'index'])->middleware('auth');
     Route::get('/kecamatan/create', [KecamatanController::class,'create']);
     Route::post('/kecamatan/store', [KecamatanController::class,'store']);
     Route::get('/kecamatan/edit/{id}', [KecamatanController::class,'edit']);
@@ -87,7 +53,7 @@ Route::get('/about', function () {
     Route::get('/kecamatan/destroy/{id}', [KecamatanController::class,'destroy']);
 
 //Kelurahan
-    Route::get('/kelurahan', [KelurahanController::class,'index']);
+    Route::get('/kelurahan', [KelurahanController::class,'index'])->middleware('auth');
     Route::get('/kelurahan/create', [KelurahanController::class,'create']);
     Route::post('/kelurahan/store', [KelurahanController::class,'store']);
     Route::get('/kelurahan/edit/{id}', [KelurahanController::class,'edit']);
@@ -95,7 +61,7 @@ Route::get('/about', function () {
     Route::get('/kelurahan/destroy/{id}', [KelurahanController::class,'destroy']);
 
 //Posyandu
-    Route::get('/posyandu', [PosyanduController::class,'index']);
+    Route::get('/posyandu', [PosyanduController::class,'index'])->middleware('auth');
     Route::get('/posyandu/create', [PosyanduController::class,'create']);
     Route::post('/posyandu/store', [PosyanduController::class,'store']);
     Route::get('/posyandu/edit/{id}', [PosyanduController::class,'edit']);
@@ -103,7 +69,7 @@ Route::get('/about', function () {
     Route::get('/posyandu/destroy/{id}', [PosyanduController::class,'destroy']);
 
 //Balita
-    Route::get('/balita', [BalitaController::class,'index']);
+    Route::get('/balita', [BalitaController::class,'index'])->middleware('auth');
     Route::get('/balita/create', [BalitaController::class,'create']);
     Route::post('/balita/store', [BalitaController::class,'store']);
     Route::get('/balita/edit/{id}', [BalitaController::class,'edit']);
@@ -111,7 +77,7 @@ Route::get('/about', function () {
     Route::get('/balita/destroy/{id}', [BalitaController::class,'destroy']);
 
 //History Posyandu
-    Route::get('/history_posyandu', [History_PosyanduController::class,'index']);
+    Route::get('/history_posyandu', [History_PosyanduController::class,'index'])->middleware('auth');
     Route::get('/history_posyandu/create', [History_PosyanduController::class,'create']);
     Route::post('/history_posyandu/store', [History_PosyanduController::class,'store']);
     Route::get('/history_posyandu/show/{id}', [History_PosyanduController::class,'show']);
@@ -122,4 +88,25 @@ Route::get('/about', function () {
 
 
 
+
+
+// //==================================================
+// //===================INFORMASI======================
+// Route::get('/informasi', [PostController::class,'index']);
+// Route::get('posts/{post:slug}', [PostController::class, 'show']);
+
+
+// //==================================================
+// //=====================ABOUT========================
+// Route::get('/about', function () {
+// return view('about', [
+//     "title" => "About",
+//     "nama1" => "Pascallis Henoch",
+//     "nim1" => "152011513025",
+//     "paskal1" => "paskal1.jpeg",
+//     "nama2" => "Adhiba Alya",
+//     "nim2" => "152011513004",
+//     "dhiba1" => "dhiba1.png",
+// ]);
+// });
 

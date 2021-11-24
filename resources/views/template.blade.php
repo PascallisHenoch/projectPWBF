@@ -31,11 +31,12 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
         <!-- Messages Dropdown Menu -->
-        <li class="nav-item dropdown">
-            <a class="nav-link" href="/" title="Logout">
-                Logout  <i class="nav-icon fas fa-sign-out-alt"></i>
-            </a>
-        </li>
+        <form action="/logout" method="post">
+          @csrf
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button type="submit" class="btn btn-danger">Logout    <i class="nav-icon fas fa-sign-out-alt"></i></button>
+          </div>
+      </form>
     </ul>
   </nav>
   <!-- /.navbar -->
