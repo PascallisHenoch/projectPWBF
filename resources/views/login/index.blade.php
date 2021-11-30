@@ -60,7 +60,7 @@
                 </div>
               @enderror
             </div>
-            <button type="submit " href="/home" class="w-100 btn btn-lg btn-primary mt-3">LOGIN</button>
+            <button type="submit " href="/pengguna" class="w-100 btn btn-lg btn-primary mt-3">LOGIN</button>
         </form>
         <p></p>
         <small class="d-block text-center">Belum mempunyai akun? <a href="/register"><b>Register Now!</b></a></small>
