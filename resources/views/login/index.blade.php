@@ -61,6 +61,14 @@
               @enderror
             </div>
             <button type="submit " href="/pengguna" class="w-100 btn btn-lg btn-primary mt-3">LOGIN</button>
+
+            @if (session()->has('loginError'))
+          </div>
+            <div class="alert alert-danger col-12" role="alert">
+              EMAIl ATAU PASSWORD YANG ANDA MASUKKAN SALAH
+           </div>
+            @endif
+            
         </form>
         <p></p>
         <small class="d-block text-center">Belum mempunyai akun? <a href="/register"><b>Register Now!</b></a></small>

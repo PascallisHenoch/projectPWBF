@@ -65,7 +65,7 @@
                with font-awesome or any other icon font library -->
             <li class="nav-header">MASTER</li>
             <li class="nav-item">
-              {{--  <a href="/role" class="nav-link">
+                <a href="/role" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
                 <p>
                     Role
