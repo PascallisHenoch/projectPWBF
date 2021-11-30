@@ -61,7 +61,6 @@
           @csrf
           <div>
             <p></p>
-              <button type="submit"><i class="nav-icon fas fa-sign-out-alt"></i> Logout </button>
           </div>
         </form>
     </ul>
