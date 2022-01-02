@@ -44,7 +44,7 @@
           @csrf
           <div class="form-floating">
             <label for="email">Email address</label>
-            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="" autofocus required value={{ old('email') }}>
+            <input type="text" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="" autofocus required value={{ old('email') }}>
             @error('email')
               <div class="invalid-feedback">
                {{ $message }}
@@ -71,8 +71,6 @@
             
         </form>
         <p></p>
-        <small class="d-block text-center">Belum mempunyai akun? <a href="/register"><b>Register Now!</b></a></small>
-        <small class="d-block text-right mt-3"><a href="/"><b>Kembali</b></a></small>
 
       </div>
       <!-- /.card-body -->

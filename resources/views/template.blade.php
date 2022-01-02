@@ -44,7 +44,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="/home" class="brand-link">
+    <a class="brand-link">
       <img src="{{ asset('img/LOGO ASIPS.png') }}" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Dashboard</span>
     </a>
@@ -64,22 +64,25 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-header">MASTER</li>
+            @if(auth( )->user( )->role == 'kader')
             <li class="nav-item">
-                <a href="/role" class="nav-link">
-                <i class="nav-icon fas fa-users"></i>
-                <p>
-                    Role
-                </p>
-                </a>
-            </li>
-            {{-- <li class="nav-item">
-              <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
+              <a href="/role" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
               <p>
-                  User
+                  Role
               </p>
               </a>
-            </li> --}}
+          </li>
+          @endif
+            @if(auth( )->user( )->role == 'admin')
+            <li class="nav-item">
+                  <a href="/role" class="nav-link">
+                  <i class="nav-icon fas fa-users"></i>
+                  <p>
+                      Role
+                  </p>
+                  </a>
+              </li>
             <li class="nav-item">
                 <a href="/kecamatan" class="nav-link">
                 <i class="nav-icon fas fa-map"></i>
@@ -104,6 +107,7 @@
                 </p>
                 </a>
             </li>
+            @endif
 
             <li class="nav-header">TRANSAKSI</li>
             <li class="nav-item">

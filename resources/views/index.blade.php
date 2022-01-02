@@ -51,7 +51,7 @@
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-github"></i> <a href="https://github.com/PascallisHenoch/projectPWBF">PWBF Kelompok 4 || Universitas Airlangga</a>
+        PWBF Kelompok 4 || Universitas Airlangga</a>
       </div>
 
     </div>
@@ -74,7 +74,6 @@
           <li><a class="nav-link scrollto" href="#gallery">Galeri</a></li>
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
           <li><a class="nav-link scrollto" href="#doctors">Tentang Kami</a></li>
-          <li><a class="nav-link scrollto" href="/register">Registrasi</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -87,7 +86,7 @@
     <div class="container">
       <h1>SELAMAT DATANG DI ASIPS</h1>
       <h2>Aplikasi Surveilans & Informasi Pencegahan Stunting</h2>
-      <a href="#services" class="btn-get-started scrollto">Mulai</a>
+      <a href="#about" class="btn-get-started scrollto">Mulai</a>
     </div>
   </section><!-- End Hero -->
 
