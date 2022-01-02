@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Role;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+use Storage;
+use Auth;
 
 class RoleController extends Controller
 {
@@ -14,11 +17,17 @@ class RoleController extends Controller
      */
     public function index()
     {
-        $role = Role::all();
- 
+        $role = Auth::user()->role;
+        if($role=='admin'){
+            // $user = User::all();
+            $user = User::where('role','!=','ortu')->get();
+        }else if($role=='kader'){
+            $user = User::where('role','ortu')->get();
+        }
+        
     	return view('role/index', [
             'title' => 'Daftar Role',
-            'role' => $role
+            'users' => $user
         ]);
     }
 
@@ -29,7 +38,7 @@ class RoleController extends Controller
      */
     public function create()
     {
-        //
+        return view('role/tambah',["title"=>"Tambah User"]);
     }
 
     /**
@@ -40,7 +49,22 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $path = $request->file('ktp')->store('images');
+        $file = $request->file('ktp');
+        $target_dir = "uploads/";
+        $target_file = $target_dir . basename($_FILES["ktp"]["name"]);
+        $uploadOk = 1;
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        $file->move($target_dir,$file->getClientOriginalName());
+        User::create([
+            'name' => $request->name,
+            'role' => $request->role,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'ktp' =>basename($_FILES["ktp"]["name"])
+        ]);
+        
+        return redirect('/role');
     }
 
     /**
@@ -62,11 +86,11 @@ class RoleController extends Controller
      */
     public function edit($id)
     {
-        $role = Role::find($id);
+        $user = User::find($id);
         
         return view('role/edit',[
             'title' => 'Edit Role',
-            'role' => $role
+            'user' => $user
         ]);
     }
 
@@ -79,9 +103,18 @@ class RoleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        Role::where('id', $id)->update([
-            'role' => $request->nama_role,
-            'updated_at' => date("Y-m-d H:i:s")
+        $user=User::find($id);
+        if(Storage::exists($user->ktp)){
+            Storage::delete($user->ktp);
+        }
+
+        $path = $request->file('ktp')->store('images');
+        $user->update([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'password'=> Hash::make($request->password),
+            'role' => $request->role,
+            'ktp'=>$path
         ]);
         
         return redirect('/role');
@@ -95,6 +128,10 @@ class RoleController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user=User::find($id);
+        $user->delete();
+         Storage::delete($user->ktp);
+         return redirect('/role');
+ 
     }
 }
